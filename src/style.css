@@ -1,0 +1,73 @@
+.hidden {
+    display: none;
+}
+.show{
+    display: block;
+}
+
+.body-index
+{
+background-image:url(img/veg3.jpg);
+background-size: 100vw 100vh; 
+}
+
+.body-timeline{
+background-image:url(img/fondo.jpg);
+background-size: 100vw 100vh;     
+opacity: initial;
+}
+  
+h2
+{
+color:#000000;  /*Genera color blanco */
+text-align: center;
+font-size: 30px;
+margin-bottom: 20px;     
+}
+
+p{
+text-align: center;
+}
+
+.icon-login {
+width: 50px;
+height: auto;
+border-image: 0px;
+align-content: center;
+}
+
+h3
+{
+color:#fff;  /*Genera color blanco */
+text-align: center;
+margin-bottom: 20px;     
+}
+
+form 
+{
+width:350px;
+margin: auto;  /* para centrar el formulario */    
+background: #F6D981; 
+padding: 10px 20px;  
+box-sizing: border-box;    
+margin-top: 20px;
+border-radius: 7px;  /* ESQUINAS REDONDAS */
+}
+
+
+
+input, .textarea 
+{
+width: 100%;
+margin-bottom: 20px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 12px;
+border: none;    
+}
+
+.boton
+{
+background: rgb(57, 114, 55);    
+padding: 15px;    
+}
