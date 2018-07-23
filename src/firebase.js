@@ -67,7 +67,8 @@ const validation = () => {
 // Login con Google
 const loginGoogle = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
-  provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+  // provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+  provider.addScope('https://www.googleapis.com/auth/plus.login');
 
   firebase.auth().signInWithPopup(provider)
     .then((result) => {
