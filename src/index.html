@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Social Network - Q.Nutrition</title>
+  <link rel="icon" href="img/icono_frutas_verduras.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bodyIndex">
+  <div id="main-container">
+    <header>
+      <h1>Bienvenidos a Q-Nutrition Center</h1>
+    </header>
+
+    <section>
+      <div id="formButton" class="hidden">
+        <form>
+          <h3>Inicio de Sesión</h3>
+          <input id="emailButton" type="button" value="Regístrate con e-mail y contraseña"><br>
+
+          <input id="faceButton" type="button" value="Registro y acceso con Facebook"><br>
+          
+          <input id="googleButton" type="button" value="Registro y acceso con Google">
+        </form>
+      </div>
+
+      <div id="optionEmail" class="hidden">
+        <form>
+          <label>Acción a realizar:</label>
+          <button id="optionR" type="button">Registrarme</button>
+          <button id="optionS" type="button">Iniciar Sesión</button>
+        </form>
+      </div>
+
+      <div id="formRegister" class="hidden">
+        <form>
+          <h2>Registro de Usuario</h2>
+          <input id="nameUser" type="text" placeholder="Ingresa tu nombre">
+          <p></p>
+          <input id="email" type="email" placeholder="Ingresa e-mail">
+          <p id="error-email"></p>
+          <input id="password" type="password" placeholder="Ingresa contraseña">
+          <p id="error-password"></p>
+          <input id="confirPassword" type="password" placeholder="Confirmar contraseña">
+          <button id="register" type="button">Registrar</button>
+        </form>
+      </div>
+
+      <div id="formSesion" class="hidden">
+          <form>
+            <h2>Inicio de Sesión</h2>
+            <input id="email2" type="email" placeholder="Ingresa e-mail">
+            <p id="error-email"></p>
+            <input id="password2" type="password" placeholder="Ingresa contraseña">
+            <p id="error-password"></p>
+            <button id="loginButton" type="button">Acceder</button>
+          </form>
+        </div>
+    </section>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!--<script src="initFirebase.js"></script>-->
+  <script src="firebase.js"></script>
+  <script src="social_network.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
