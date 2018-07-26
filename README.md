@@ -82,7 +82,8 @@ Recordar que :
 ##  1er prototipo de alta fidelidad:
 ![1er prototipo de alta fidelidad](https://scontent-scl1-1.xx.fbcdn.net/v/t1.15752-9/37765313_1727561387297339_969873893986664448_n.png?_nc_cat=0&oh=16c03ce7bc6244d4b4a5f8d1acf71371&oe=5BD7F61F)
 
-![alta fidelidad](https://www.figma.com/proto/XEESZc0hxzCN8wKqISQTTXbj/Untitled?node-id=1%3A2&scaling=scale-down)
+Alta fidelidad :
+ (https://www.figma.com/proto/XEESZc0hxzCN8wKqISQTTXbj/Untitled?node-id=1%3A2&scaling=scale-down)
 
 --------------------------------------------------------------------------------------------------
 Preguntas :
