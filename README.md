@@ -2,7 +2,7 @@
 # Creando una Red Social 
 
 
-# red social ayni o urpi(no esta definido el nombre)
+#Red Social en camino : Urpi
 esta es un red social enfocada en la educacion atravez del compartir experiencias,datos,etc; con la intencion de fomentar el aprendisaje atreavez de un plataforma diferente como una red social.y asi dar la posiblilidad de fomentar ,inspirar y enseñar aserca del peru.
 ## Nuestra historia comienza así: 
 
@@ -82,6 +82,7 @@ Recordar que :
 ##  1er prototipo de alta fidelidad:
 ![1er prototipo de alta fidelidad](https://scontent-scl1-1.xx.fbcdn.net/v/t1.15752-9/37765313_1727561387297339_969873893986664448_n.png?_nc_cat=0&oh=16c03ce7bc6244d4b4a5f8d1acf71371&oe=5BD7F61F)
 
+![alta fidelidad](https://www.figma.com/proto/XEESZc0hxzCN8wKqISQTTXbj/Untitled?node-id=1%3A2&scaling=scale-down)
 
 --------------------------------------------------------------------------------------------------
 Preguntas :
