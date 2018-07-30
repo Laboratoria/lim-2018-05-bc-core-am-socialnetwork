@@ -261,9 +261,9 @@ window.printPost = () => {
     let userId = firebase.auth().currentUser.uid;
        
     const postActions = (id) => {
-      return `<div class="actions card-action">
-      <a onclick="savePostEdit('${id}')" class="save-button hidden"><img src="img/garvage.svg" alt="icono de editar" width="24px"></a>
-      <a onclick="editPost('${id}')" class="edit-button"><img src="img/save.svg" alt="icono de editar" width="24px"></a>
+      return `<div class="actions">
+      <a onclick="savePostEdit('${id}')" class="save-button hidden"><img src="img/guardar.png" alt="icono de guardar" width="24px"></a>
+      <a onclick="editPost('${id}')" class="edit-button"><img src="img/edit(1).png" alt="icono de editar" width="24px"></a>
       <a onclick="deletePost('${id}')" id="delete-button"><img src="img/delete.png" alt="icono de eliminar" width="24px"></a>
       </div>`
     }

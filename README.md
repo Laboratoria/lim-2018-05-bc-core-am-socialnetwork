@@ -11,8 +11,6 @@ La comida es esencial para nuestra supervivencia y ¿A quién no le gusta la com
 
 La comida actúa como lenguaje universal y la búsqueda por comidas y alimentos cada vez más saludables han derivado en una tendencia que apuesta por lo vegetal y natural. 
 
-**** DESIGN USER PERSON ????______====================>>>>>>>
-
 
 ### Entregables
 
@@ -27,13 +25,25 @@ Lo básico para que una red social funcione es tener usuarios interesados en la 
 Según los resultados de nuestra encuesta, nuestros usuarios son personas en su mayoria de 20 a 30 años, amantes de la vida sana y los deportes, entre ellos estudiantes, atletas, personas aficionadas al gimnasio, madres de familia y personas en general preocupadas por llevar una alimentación saludable en base de frutas y verduras en su menú diario.
 
 ¿Cómo descubriste las necesidades de los usuarios?
-En la búsqueda de información descubrimos que no existen redes sociales que se enfoquen únicamente en un tipo de alimentación, sin embargo muchos usuarios quisieran tener un lugar donde compartir dudas, postear sobre menús, platillos saludables, recetas en un panel  que muestre de manera amigable y responsive estos datos . 
+En la búsqueda de información descubrimos que no existen redes sociales que se enfoquen únicamente en un tipo de alimentación, sin embargo muchos usuarios quisieran tener un lugar donde compartir dudas, postear sobre menús, platillos saludables, recetas en un panel  que muestre de manera amigable y responsive estos datos. 
 
 ¿Qué problema resuelve el producto para estos usuarios?
+La red social Q-Nutrition ayudará a muchas personas a encontrar amistades que les interese alimentarse saludablemente. Además podrán aprender compartir  experiencias y aprender de los conocimientos que otros usuarios compartan. Si antes nos era dificil encontrar consejos de cómo alimentarnos bien, encontrar recetas saludables y experiencias vividas de personas; ahora nos resultará fácil encontrar todo lo que buscábamos en un sólo lugar.
+
 ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
+Los usuarios desean informarse sobre una alimentacion saludable y consciente. Desean compartir lo que hacen y aprender de otros.
+
 ¿Cuáles son las principales funcionalidades del producto y cuál es su prioridad?
+La red social Q-Nutrition permite que muchos usuarios puedan conectarse en un solo lugar, nuestra aplicación web, con el fin de aprender, compartir y conocer más sobre a los beneficios de una alimentación saludable. 
+Nuestra prioridad es facilitar a las personas interesadas un espacio para converzar sobre un mismo tema, que es la "alimentación sana y consciente" 
+
 ¿Cómo verificaste que el producto les está resolviendo sus problemas?
+Los usuarios comentan que les agrada el producto, y se muestran interesados por participar.
+
 ¿Cómo te asegurarás que estos usuarios usen este producto?
+El estudio de mercado y las encuestas realizadas nos mostraron resultados favorables donde los usuarios señalan que no conocen una red social similar.
+Es decir, hay aplicaciones donde venden comidas rápidas, pero no conocen una red social que hable de la alimentación. Esto nos asegura que los usuarios se muestran deseosos por usar el producto.
+Además cada semana compartiremos tips y consejos de nutricionistas famosos, para motivar a los usuarios a seguir utilizando el producto.
 
 ## Benchmarking
 
