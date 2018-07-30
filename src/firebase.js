@@ -16,7 +16,7 @@ const saveData = (userId, name, email, imageUrl) => {
     email: email,
     picture: imageUrl,
     id: userId,
-  }); 
+  });
 }
 
 
@@ -24,14 +24,11 @@ const saveData = (userId, name, email, imageUrl) => {
 const welcome = () => {
   const messageWelcome = document.getElementById('welcome-post');
   let userLogin = firebase.currentUser;
-  console.log(usersLogin);
-  console.log('welcome');
   firebase.database().ref('users/')
-  .on('value', (userRef) =>{
-    const users = usersRef.val();
-    console.log(usersLogin);
-  })
-
+    .on('value', (userRef) => {
+      const users = usersRef.val();
+      console.log(usersLogin);
+    })
 }
 
 // Registro de Usuarios Nuevos
@@ -44,24 +41,23 @@ const registerNew = (email, password) => {
       } else {
         username = user.displayName;
       }
-      if (user.photoURL == null){
+      if (user.photoURL == null) {
         picture = "https://thumbs.dreamstime.com/b/icono-del-usuario-46707697.jpg";
       } else {
         picture = user.photoURL;
       }
       saveData(user.uid, username, user.email, picture);
       check();
-      alert('Felicitaciones, ya estas registrado! \nConfirma el mensaje de verificación en tu correo y seguidamente puedes Iniciar Sesión')
+      alert('Tu usuario ha sido registrado! \nConfirma el mensaje de verificación en tu correo y seguidamente puedes Iniciar Sesión')
       formRegister.classList.add('hidden');
       formInicio.classList.remove('hidden');
-
     })
     .catch((error) => {
       let errorCode = error.code;
       let errorMessage = error.message;
-      if(error.message === 'auth/email-already-in-use'){
+      if (error.message === 'auth/email-already-in-use') {
         validInputs.innerHTML = "El email ingresado ya está en uso";
-      }else if(error.message === 'The email address is already in use by another account.'){
+      } else if (error.message === 'The email address is already in use by another account.') {
         validInputs.innerHTML = "El email está siendo utilizado por otro usuario";
       }
     })
@@ -73,12 +69,12 @@ let login = (email, password) => {
     .catch((error) => {
       let errorCode = error.code;
       let errorMessage = error.message;
-      if(error.message === 'The password is invalid or the user does not have a password.'){
+      if (error.message === 'The password is invalid or the user does not have a password.') {
         validInputs2.innerHTML = "email o password incorrectos";
-      }else if(error.message === 'There is no user record corresponding to this identifier. The user may have been deleted.'){
+      } else if (error.message === 'There is no user record corresponding to this identifier. The user may have been deleted.') {
         validInputs2.innerHTML = "Usuario no registrado";
       }
-  });
+    });
 }
 
 // Validación de autenticación de usuarios
@@ -106,14 +102,12 @@ const loginGoogle = () => {
   const provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider)
     .then((result) => {
-    const token = result.credential.accessToken;
-    // console.log("result", result)
+      const token = result.credential.accessToken;
 
-    // Información de usuario
-    const userData = result.user;
-    console.log(userData)
-    saveData(userData.uid, userData.displayName, userData.email, userData.photoURL);
-    window.location.href = 'timeline.html';
+      // Información de usuario
+      const userData = result.user;
+      saveData(userData.uid, userData.displayName, userData.email, userData.photoURL);
+      window.location.href = 'timeline.html';
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -136,11 +130,11 @@ const check = () => {
 // Cambio de contraseña
 const resetPassword = (email) => {
   firebase.auth().sendPasswordResetEmail(email)
-  .then(() => {
-  })
-  .catch((error) => {
-    // console.log(error);
-  })
+    .then(() => {
+    })
+    .catch((error) => {
+      // console.log(error);
+    })
 }
 
 // funcion para cerrar sesion
@@ -163,27 +157,23 @@ const loginFacebook = () => {
       window.location.href = 'timeline.html';
     })
     .catch((error) => {
-      // console.log(error.code);
-      // console.log(error.message);
-      // console.log(error.email);
-      // console.log(error.credential);
     });
 }
 
 // Función para escribir nuevo post
-const writeNewPost = (uid, name, textPost, state ) => {
+const writeNewPost = (uid, name, textPost, state) => {
   let postData = {
     id: uid,
     author: name,
     newPost: textPost,
     privacy: state,
     likeCount: 0,
-    followers:[],
+    followers: [],
   };
-  
+
   // Key para nueva publicación
   let postKey = firebase.database().ref().child('posts').push().key;
-  console.log(postKey);      
+  console.log(postKey);
   let updates = {};
   updates['/posts/' + postKey] = postData;
   updates['/user-posts/' + uid + '/' + postKey] = postData;
@@ -200,7 +190,7 @@ window.deletePost = (id) => {
     alert('Post eliminado');
     window.location.reload()
   } else {
-    console.log('regresa al muro')
+    return false;
   }
 }
 
@@ -225,28 +215,28 @@ window.savePostEdit = (id) => {
   const editButton = currentPost.querySelector('.edit-button');
   const saveButton = currentPost.querySelector('.save-button');
   const userId = firebase.auth().currentUser.uid;
-  
+
   firebase.database().ref('posts/')
-  .on('value', (postsRef) =>{
-    const posts = postsRef.val();
-    const listPost = posts[id];
-    let postEdit = {
-      id: listPost.id,
-      author: listPost.author,
-      newPost: currentTextarea.value,
-      privacy: listPost.privacy,
-      likeCount: 0,
-    }
+    .on('value', (postsRef) => {
+      const posts = postsRef.val();
+      const listPost = posts[id];
+      let postEdit = {
+        id: listPost.id,
+        author: listPost.author,
+        newPost: currentTextarea.value,
+        privacy: listPost.privacy,
+        likeCount: 0,
+      }
 
-  let updates = {};
-  updates['/posts/' + id] = postEdit;
-  updates['/user-posts/' + userId + '/' + id] = postEdit;
-  return firebase.database().ref().update(updates);
+      let updates = {};
+      updates['/posts/' + id] = postEdit;
+      updates['/user-posts/' + userId + '/' + id] = postEdit;
+      return firebase.database().ref().update(updates);
 
-  editPost.disabled = true;
-  saveButton.classList.add('hidden');
-  editButton.classList.remove('hidden');
-  })
+      editPost.disabled = true;
+      saveButton.classList.add('hidden');
+      editButton.classList.remove('hidden');
+    })
 }
 
 
@@ -266,21 +256,21 @@ window.printPost = () => {
       <a onclick="editPost('${id}')" class="edit-button"><img src="img/edit(1).png" alt="icono de editar" width="24px"></a>
       <a onclick="deletePost('${id}')" id="delete-button"><img src="img/delete.png" alt="icono de eliminar" width="24px"></a>
       </div>`
-    }
+      }
 
-    postsOrder.forEach((id) => {
-      const listPost = posts[id];
-      publications.innerHTML += `
+      postsOrder.forEach((id) => {
+        const listPost = posts[id];
+        publications.innerHTML += `
         <div class="" id=${id}>
           
           <div class="col s12 m12">
           <div class="card green lighten-2">
-              <div class="card-content white-text">
+              <div class="card-content>
                 <span class="card-title">
                 Nombre: ${listPost.author} </span>
                 <div class="actions">${listPost.privacy}</div>
               </div>
-            <textarea class="textarea-post green" cols="80" rows="7" disabled>${listPost.newPost}</textarea>
+            <textarea class="textarea-post card green lighten-2" cols="80" rows="7" disabled>${listPost.newPost}</textarea>
            <div>
               <div class="icon-like">
                 <a href="#"> <img id="like-button" src="img/icon-like.svg" alt="icono de like" width="20px"> </a>
@@ -290,36 +280,7 @@ window.printPost = () => {
           </div>
         </div>
        `
+      })
+
     })
-
-  })
 }
-
-
-
-
-
-
-
-// postsOrder.forEach((id) => {
-//   const listPost = posts[id];
-//   publications.innerHTML += `
-//     <div class="show-post green" id=${id}>
-//       <div>
-//         <p>Nombre: ${listPost.author}</p>
-//         <div class="actions">${listPost.privacy}</div>
-//       </div>
-//       <textarea class="textarea-post" cols="80" rows="7" disabled>${listPost.newPost}</textarea>
-//       <hr>
-//       <div>
-//         <div class="icon-like">
-//           <a href="#">
-//             <img id="like-button" src="img/like.jpg" alt="icono de like" width="20px">
-//           </a>
-//           <p class="count-like" id="show-count">${listPost.likeCount}</p>
-//           </div>
-//         ${userId === listPost.id && postActions(id)}
-//       </div>
-//     </div>
-//    `
-// })

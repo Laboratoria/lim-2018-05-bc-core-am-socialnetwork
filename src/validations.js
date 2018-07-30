@@ -25,7 +25,6 @@ const isValidLogin = (email, password) => (isEmail(email) && isNotEmpty(password
 const validationUpdatePassword = (email) => isEmail(email);
 
 // Valida publicacion en el muro
-// let newPost = document.getElementById('post').value;
 const validationPublicPost = (newPost) => isMessage(newPost);
 
 // Exportando funciones al Objeto Global windown
@@ -33,3 +32,9 @@ window.isValidLogin = isValidLogin;
 window.validationRegisterUser = validationRegisterUser;
 window.validationPublicPost = validationPublicPost;
 window.validationUpdatePassword = validationUpdatePassword;
+window.isNotEmpty = isNotEmpty;
+window.isEmail = isEmail;
+window.equalPassword = equalPassword;
+window.miniLenght = miniLenght;
+window.isMessage= isMessage;
+

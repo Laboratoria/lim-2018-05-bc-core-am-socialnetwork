@@ -33,18 +33,17 @@ publicButton.addEventListener('click', () => {
   let userId = firebase.auth().currentUser.uid;
   firebase.database().ref('/users/' + userId).once('value')
     .then((user) => {
-    const nameUser = (user.val().username);
-    let newPost = document.getElementById('post').value;
-    let state = selectPrivacy.value;
-    if (selectPrivacy.value != '0' && validationPublicPost(newPost)) {
-      writeNewPost(userId, nameUser, newPost, state);
-      printPost();
-      document.getElementById('post').value = '';
-      document.getElementById('privacy').value = '0';
-      validPost.innerHTML = '';
-  } else {
-    validPost.innerHTML = 'Selecciona privacidad y/o escribe un mensaje';
-
-  }
-})
+      const nameUser = (user.val().username);
+      let newPost = document.getElementById('post').value;
+      let state = selectPrivacy.value;
+      if (selectPrivacy.value != '0' && validationPublicPost(newPost)) {
+        writeNewPost(userId, nameUser, newPost, state);
+        printPost();
+        document.getElementById('post').value = '';
+        document.getElementById('privacy').value = '0';
+        validPost.innerHTML = '';
+      } else {
+        validPost.innerHTML = 'Selecciona privacidad y/o escribe un mensaje';
+      }
+    })
 })

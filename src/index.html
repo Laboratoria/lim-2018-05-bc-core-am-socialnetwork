@@ -6,28 +6,22 @@
   <meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Q.Nutrition</title>
   <link rel="icon" href="img/isotipo.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
-
-  <!-- <header>
-    <img src="img/fondo-nutricion-1.jpg" alt="imagen de tema" width="100%" height="190px">
-  </header>
-   -->
-
   <!-- ***Formulario de Login*** -->
-  <!-- ************************* -->
   <main>
   <div id="main-container">
     <section class="section-forms">
       <div id="formInicio">
           <img src="img/logo-nutricion2.png" class="logo-qnut" alt="logo-qnutrition"> 
           <div>
-            <h6> ¡Conectate con un estilo de vida saludable!</h6>
+
+            <h6 class="slogan-login">¡Tips para comer y vivir mejor!</h6>
             <p class="valid-inputs" id="valid-inputs2"> </p>
             <form class="col s12">
               <div class="input-field col s12">
@@ -35,31 +29,30 @@
                 <input id="email-login" type="email" class="validate">
                 <label for="email-login">Email</label>
               </div>
-              
               <div class="input-field col s12">
                 <i class="material-icons prefix">lock_outline</i>
                 <input id="password-login" type="password" class="validate">
                 <label for="password-login">Contraseña</label>
                 <div><a href="#" class="update-password"><p id="update-password">¿Olvidó su contraseña?</p></a></div>
               </div>
-              <input type="button" id="loginButton" class="bot waves-effect light-green darken-2 btn-large" value="Ingresa">
-              
+              <div>
+                <input type="button" id="loginButton" class="bot btn-large light-green darken-2" value="Ingresa">
+              </div>  
             </form>
           </div>
           <br>
+          <p class="simple-text">O ingresa con:</p>
           <div class="icon-redes">
             <div class="icon-snf"><a href="#" ><img src="img/icon-facebook-login.svg" class="snf-face" id="faceButton" alt="icono-facebook"></a></div>
             <div class="icon-sng"><a href="#"><img src="img/icon-google-login.svg" class="sng-goo" id="googleButton" alt="icono-google"></a></div>
           </div>
 
           <div>
-            <div><a href="#" class="register"><p id="registerLink">Crea aquí una cuenta </p></a></div>
+            <div><p class="go-register">¿Todavía no eres miembro? <a href="#" id="registerLink" class="link-to-register"> Únete ahora</a></div>
           </div>
       </div>    
-        
-      
+              
       <!-- *** Formulario de Registro *** -->
-      <!-- ****************************** -->
       <div id="formRegister" class="hidden">
         <form>
           <p class="slogan">¡Conéctate con un estilo de vida saludable!</p>
@@ -94,16 +87,14 @@
               <label for="confirPassword">Confirmar contraseña</label>
             </div>
           </div>         
-          <button id="registerButton" type="button" class="button">Registrar</button>
+          <button id="registerButton" type="button" class="bot btn-large light-green darken-2">Registrar</button>
         </form>
       </div>
     </section>
   </div>
   </main>
 
-
   <!-- ******* Pie de Página ****** -->
-  <!-- **************************** -->
   <footer>
     <p class="section-footer"><img src="img/icono-copy.png" class="img-foot" alt="icono de Copyright">Copyright - Todos los derechos reservados - Autores: Lorena Reyes - Geraldine Saco - Grecia Anicama</p>
   </footer>
