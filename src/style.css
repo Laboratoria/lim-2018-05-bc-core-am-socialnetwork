@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 body {
-
     background: #DEDEDE;
     display:flex;
     min-height: 100vh;
