@@ -37,8 +37,7 @@ window.onload =()=>{
         console.log("error de firebase >"+ error.code);
         console.log("error de firebase ,mensaje >" +error.message);
         alert("Aun no estas registradx ¿que esperas comienza a registrarte y veras todos los beneficios; o quizas tu contraseña no es correcta 😨");    })
-  }
-  
+  } 
   logout=()=>{
     firebase.auth().signOut()
     .then(()=>{
