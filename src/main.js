@@ -1,18 +1,31 @@
 window.onload =()=>{
     firebase.auth().onAuthStateChanged((user)=>{
         if(user){
-            //si resta,mps logeados 
-            loggedOut.style.display = "none";
-            loggedIn.style.display ="block";
+            //Si está registrado,entonces iniciará sesión
+            loggedIn.style.display="block";
+            loginUser.style.display = "none";
+            registerUser.style.display ="none";
             alert("Hola, ya puedes difrutar de esta red social");
         }else{
             //si no estamos logeados
-            loggedOut.style.display ="block";
-            loggedIn.style.display ="none";
+            loginUser.style.display = "block";
+            registerUser.style.display ="none";
+            loggedIn.style.display="none";
         }
     });
-
+window.creatCount=(user) => {
+        loginUser.style.display = "none";
+        registerUser.style.display ="block";
+        loggedIn.style.display="none";
+    }
   }
+
+  window.back = () => {
+    loginUser.style.display = "block";
+    registerUser.style.display ="none";
+    loggedIn.style.display="none";
+}
+
   window.register =() => {
     const emailValue = email.value;
     const passwordValue = password.value;
@@ -31,7 +44,8 @@ window.onload =()=>{
     const passwordValue = password.value;
     firebase.auth().signInWithEmailAndPassword(emailValue,passwordValue)
     .then(()=>{
-        console.log("usuario con login exitoso")
+        console.log("usuario con login exitoso");
+        window.location.assign("home.html");
     })
     .catch((error)=>{
         console.log("error de firebase >"+ error.code);
@@ -42,9 +56,12 @@ window.onload =()=>{
     firebase.auth().signOut()
     .then(()=>{
         alert("Esperamos que vuelvas pronto");
+        window.location.assign("login.html");
     })
     .cath();
   }
+
+
   loginFacebook=()=>{
     const provider = new firebase.auth.FacebookAuthProvider();
     //provider.addScope("user_birthday");tiene que pedirle permiso a facebook

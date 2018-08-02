@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!--Íconos de Google, se importan aquí-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+  <!--SE TRABAJARÁ CON 2 HTML LOGIN Y REGISTER SIN BOTÓN "CERRAR SESIÓN" -->
+<body>
+
+  <div id="loggedIn" >
+        <button id="logOutButton" class="btn waves-effect ligth" onclick="logout()"> Cerrar Sesión</button>
+      </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script>
+  // Iniciando Firebase
+  var config = {
+    apiKey: "AIzaSyDK2Ta8nwPM7UWDdUHYrVVx5Vof0k0vuFY",
+    authDomain: "redsocial-urpi.firebaseapp.com",
+    databaseURL: "https://redsocial-urpi.firebaseio.com",
+    projectId: "redsocial-urpi",
+    storageBucket: "redsocial-urpi.appspot.com",
+    messagingSenderId: "430758923648"
+  };
+  firebase.initializeApp(config);
+</script>
+    <script src="main.js"></script>
+    <!-- Compilando JavaScript con Materialize-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+</html>
