@@ -4,14 +4,14 @@ window.onload =()=>{
             //si resta,mps logeados 
             loggedOut.style.display = "none";
             loggedIn.style.display ="block";
-            console.log("User >"+ JSON.stringify(user));
-            alert("hola, ya puedes difrutar de esta red social");
+            alert("Hola, ya puedes difrutar de esta red social");
         }else{
             //si no estamos logeados
             loggedOut.style.display ="block";
             loggedIn.style.display ="none";
         }
     });
+
   }
   window.register =() => {
     const emailValue = email.value;
@@ -23,7 +23,7 @@ window.onload =()=>{
     .catch((error)=>{
         console.log("error de firebase >" +error.code);
         console.log("errorfirebase,mensaje >" +error.message);
-        alert("Usuarix ya esta registrado")
+        //alert("Usuarix ya esta registrado")
     });
   }
   window.login=()=>{
