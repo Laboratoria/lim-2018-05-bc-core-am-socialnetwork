@@ -1,22 +1,23 @@
 window.onload = () => {
 	firebase.auth().onAuthStateChanged((user) => {
 		if (user) {
-			//si resta,mps logeados
+			//Si está registrado,entonces iniciará sesión
 			loggedOut.style.display = "none";
 			loggedIn.style.display = "block";
+			register.style.display = "block";
 			console.log("User >" + JSON.stringify(user));
 			alert("hola, ya puedes difrutar de esta red social");
 		} else {
 			//si no estamos logeados
 			loggedOut.style.display = "block";
 			loggedIn.style.display = "none";
+			register.style.display = "none";
 		}
 	});
 }
 window.register = () => {
 	const emailRegister = emailRegister.value;
 	const nameRegister = nameRegister.value;
-	const userRegister = userRegister;
 	const passwordRegister = passwordRegister.value;
 	if( nameRegister && emailRegister && userRegister && passwordRegister !== ""){
 		const filtro = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i ;

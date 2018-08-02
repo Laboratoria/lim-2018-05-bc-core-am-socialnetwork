@@ -17,48 +17,29 @@
 </head>
 
 <body>
-  <div class="container">
+
+  <div class="container" id="register">
     <div>
+
+      <input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
       <img class="responsive-img  circle" src="../images/logocircle.png" alt="sevenColors">
     </div>
+    
     <p>Únete a esta familia</p>
     <div class="col s3 m6 grey lighten-5">
-      <input id="nameRegister" type="text" placeholder="🙌;Nombre y Apellidos" required>
       <input id="emailRegister" type="email" placeholder=" 🙏-Correo Electrónico" required>
-      <input id="userRegister" type="text" placeholder="🙆 -Usuario" required>
+      <input id="nameRegister" type="text" placeholder="🙌;Nombre y Apellidos" required>
       <input id="passwordRegister" type="password" placeholder=" 🙊-Contraseña" required>
     </div>
     <!--  <input id"politics" type="checkbox" name="l"> 
-    <p> Acepto las condiciones de Servicio y Políticas de Urpi </p> -->
+      <p> Acepto las condiciones de Servicio y Políticas de Urpi </p> -->
     <button id="" onclick="register()" class="btn orange">Conoce a nuestro Perú</button>
     <div class="row"> o
       <br>
-      <button class="btn blue" id="loginFacebook" onclick="loginFacebook()"> Conéctate con Facebook</button>
-      <button class="btn red"> Conéctate con G-Mail</button>
+      <button class="btn blue" id="loginFacebook" onclick="registerFacebook()"> Regístrate con Facebook</button>
+      <button class="btn red"> Regístrate con G-Mail</button>
     </div>
-
-
-
-
-
-
-
-
-
-
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <script>
