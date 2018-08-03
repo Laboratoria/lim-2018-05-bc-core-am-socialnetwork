@@ -1,24 +1,151 @@
 # Creando una Red Social
 
+El producto socilitado por la cliente es una red social, de las opciones temáticas para desarrollar el producto escogimos realizar una red social de alimentación, nos enfocaremos principalmente en conocer la experiencia de las personas en los lugares a los que suelen acudir cuando tienen antojitos.
+
+![WariQué](https://image.ibb.co/jqs6Yo/Logo.png)
+
+El nombre elegido es [Wari ¿qué?](https://www.figma.com/proto/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Neetwork?node-id=19%3A2&scaling=scale-down) porque los wariques son lugares escondidos donde se suele comer rico y se llega por recomendaciones, además tomamos en cuenta la siguiente definición:
+
++ "La palabra huarique (o warique) es un vocablo quechua que proviene de dos palabras, la primera es 'wa', la cual era utilizada para referirse a algo que no se entiende, que no se conoce o que esta escondido. La segunda palabra es 'rique', la cual deriva de la palabra 'rocqro' que significa guiso. Haciendo el ejercicio de unirlas se podría decir que warique es un lugar escondido donde se hacen guisos.  (Fuente: Martha Hildebrant). 
+- Es por eso que muchos conocedores del buen comer (llamados también sibaritas y gastrónomos) han venido usando el término huarique. Ahora se entiende el porque son lugares poco conocidos pero donde comer es una experiencia única.
+- Cabe recalcar que la mayoría de huariques tienen fama de ser económicos. En la mayoría de casos esto se aplica pero en otros el precio esta a la par de los más reconocidos restaurantes gourmets. Paga el que sabe comer. "
+
+Fuente: [yumi.pe](http://www.yumi.pe/que-significa-huarique/)
+
+## Prototipos del proyecto
+
+El prototipo de baja fidelidad realizado por el equipo:
+
+![Vista login](img/login.jpeg)
+![Vista register](img/registrarse.jpeg)
+![Vista choose](img/elige.jpeg)
+![Vista feed](img/feed.jpeg)
+![Vista wall](img/wall.jpeg)
+![Vista notificaciones](img/notificaciones.jpeg)
+![Vista perfil](img/perfil.jpeg)
+
+El prototipo de alta fidelidad se realizó en [Figma](https://www.figma.com/file/RZ0tWEcYIf6hfsMQWWf1dQmA/Social-Network?node-id=9%3A1) donde consideramos las vistas a considerar para la presentacion del proyecto.
+
+- Vista en móvil
+![Vista web](img/vista-movil.png)
+
+- Vista en web
+![Vista web](img/vista-web.png)
+
+### Conclusiones de testing con el prototipo de alta fidelidad con usuarios
+### Conclusiones de testing con el producto en HTML
+
+## Definición del producto
+
+### Cuáles son los elementos básicos que tiene una red social.
+Los elementos básicos que estamos considerando son:
+- Registro
+- Login
+- Muro de publicaciones
+
+### Quiénes son los principales usuarios de producto.
+Nuestros principales usuarios son:
+- Parejas que buscan un lugar nuevo para comer.
+- Familias que buscan almorzar algo diferente y rico, un fin de semana.
+- Personas que constantemente buscan probar nuevos sabores.
+
+### Cómo descubriste las necesidades de los usuarios.
+A través de entrevistas, se le preguntó a los usuarios lo siguiente:
+- Cuando se te antoja algo en específico ¿tienes un lugar a donde ir?
+- En caso no tengas un lugar, ¿dónde buscas recomendaciones?
+- Si algún amigo o conocido te recomienda un lugar para ir a comer, por ejemplo, chicharrones o ceviche, irías solo en busca del lugar.
+- Si conoces un buen lugar para comer, ¿lo recomendarías?
+
+### Qué problema resuelve el producto para estos usuarios.
+Las personas siempre estamos buscando un buen lugar para comer, ya sea para invitar a la familia o por un simple antojo, pero muchas veces no sabemos a dónde ir. Con esta red social permitiremos que las personas puedan expresarse y recomendar los wariques y restaurantes que visiten a través de publicaciones personales y/o valorando las publicaciones de los demás usuarios.
+
+### Cuáles son los objetivos de estos usuarios en relación con el producto.
+El principal objetivo es compartir información de dónde sirven los 'mejores' platos.
+
+### Cuáles son las principales funcionalidades del producto y cuál es su prioridad.
+La prioridad del producto es recomendar platos de comida en lugares específicos. En la aplicación se podrá buscar por platos de comida y filtrar por distritos y precios.
+
+### Cómo verificaste que el producto les está resolviendo sus problemas.
+A través de las entrevistas nos dimos cuenta de que las personas confían mucho en las recomendaciones de los demás sobre nuevos lugares para comer bien, pero no suelen encontrar con facilidad y en un solo lugar la información que necesitan.
+
+### Cómo te asegurarás que estos usuarios usen este producto.
+La estrategia de difusión consiste principalmente en la recomendación 'boca a boca'. Además nos contactaremos con redactores de medios en línea de la sección tecnología y/o gastronomía, influencers y bloggueros para que realicen alguna mención de nuestra app en sus medios.
+
+Adicionalmente realizaremos una campa de difusión en redes sociales (Twitter, Facebook e Instagram), con mayor fuerza en la hora de las comidas y fines de semana que es donde las personas se dan tiempo para buscar lugares para comer.
+
+## Benchmark de las principales redes sociales
+
+- Sección de Gastronomía de [El Comercio](https://elcomercio.pe/noticias/gastronomia)
+
+En esta sección realizan galerías de sitios donde podemos ir a comer un determinado platillo, visitar en una ruta, eventos gastronómicos.
+![gastronomía EC](img/EC-gastro.png)
+
+- [El Trinche](http://www.eltrinche.com/)
+
+Es una plataforma web que recomienda restaurantes, tiene blogeros colaboradores.
+![trinche](img/trinche.png)
+
+## Resumen de entrevistas con usuarios
+
+
+## Checklist
+
+### General
+
+* [ ] Producto final sigue los lineamientos del diseño.
+
+### `README.md`
+
+* [x] Definición del producto:
+  * [x] Cuáles son los elementos básicos que tiene una red social.
+  * [x] Quiénes son los principales usuarios de producto.
+  * [x] Cómo descubriste las necesidades de los usuarios.
+  * [x] Qué problema resuelve el producto para estos usuarios.
+  * [x] Cuáles son los objetivos de estos usuarios en relación con el producto.
+  * [x] Cuáles son las principales funcionalidades del producto y cuál es su prioridad.
+  * [x] Cómo verificaste que el producto les está resolviendo sus problemas.
+  * [x] Cómo te asegurarás que estos usuarios usen este producto.
+* [ ] Benchmark de las principales redes sociales.
+* [ ] Resumen de entrevistas con usuarios.
+* [x] Link/screenshots del prototipo de alta fidelidad.
+* [ ] Conclusiones de testing con el prototipo de alta fidelidad con usuarios.
+* [ ] Conclusiones de testing con el producto en HTML.
+
+### Pruebas / tests
+
+* [ ] Tests unitarios cubren un mínimo del 70% de statements, functions, lines y branches.
+* [ ] Pasa tests (y linters) (`npm test`).
+
+### Creación de cuenta (sign up)
+
+* [x] Permite crear cuenta.
+* [x] Valida email.
+* [x] Valida password.
+* [ ] Muestra mensajes de error.
+
+### Inicio de sesión (sign in)
+
+* [x] Permite iniciar sesión.
+* [x] Valida email.
+* [x] Valida password.
+* [ ] Muestra mensajes de error.
+
+### Muro (wall/feed)
+
+* [ ] Muestra _muro_.
+* [x] Permite publicar nuevos posts.
+* [x] Permite eliminar posts.
+* [ ] Pide confirmación antes de borrar posts.
+* [ ] Permite editar posts (in place).
+* [ ] Permite publicar y filtrar posts por público/yo.
+* [ ] Permite dar _like_ a los posts y llevar un conteo de ellos.
+
+
+==================================================
+
 ## Preámbulo
 
-Instagram, Snapchat, Twitter, Facebook, Twitch, Linkedin, etc. Las redes
-sociales han invadido nuestras vidas. Las amamos u odiamos, y muchxs no podemos
-vivir sin ellas.
-
-Hay redes sociales de todo tipo y para todo tipo de intereses. Por ejemplo,
-en una ronda de financiamiento con inversionistas, se presentó una red social
-para químicos en la que los usuarios podían publicar artículos sobre sus
-investigaciones, comentar en los artículos de sus colegas, y filtrar artículos
-de acuerdo a determinadas etiquetas o su popularidad, lo más reciente, o lo
-más comentado.
-
-## Introducción
-
-Una emprendedora nos ha encargado crear una red social. No nos da mucho detalle
-sobre qué tipo de red social quiere, sólo nos dice que creemos la mejor que
-podamos, y que luego la convenzamos de lanzarla al mercado. Nos da ciertos temas
-en los que le gustaría invertir:
+temas en los que le gustaría invertir:
 
 * Alimentación
 * Feminismo
@@ -26,46 +153,10 @@ en los que le gustaría invertir:
 * Salud
 * Energías Renovables
 
-## Objetivos
+[`localStorage`](https://developer.mozilla.org/es/docs/Web/API/API_de_almacenamiento_web/Usando_la_API_de_almacenamiento_web)
 
-El objetivo principal de aprendizaje de este proyecto es construir un sitio web
-[_responsive_](https://github.com/Laboratoria/curricula-js/tree/master/topics/css/02-responsive)
-con más de una vista (página), y en el que podamos leer y escribir datos.
+En este proyecto **SÍ está permitido** usar librerías o frameworks, pero **no es obligatorio** :smiley:.
 
-Algunos objetivos específicos:
-
-* Entender las necesidades de los usuarios para los que crearás el producto y que ayudarás a resolver.
-* Poner en juego tu creatividad para generar ideas que lleven a una solución original y valiosa del problema.
-* Cuentas con el apoyo de tus compañeras, debes trabajar en equipo buscando _feedback_ constante.
-
-## Consideraciones generales
-
-Este proyecto se debe "resolver" en tríos.
-
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6), HTML y CSS. En este proyecto **SÍ está permitido** usar librerías o
-frameworks, pero **no es obligatorio** :smiley:.
-
-Para comenzar tendrás que hacer un _fork_ y _clonar_ este
-repositorio.
-
-## Parte obligatoria
-
-### General
-
-En este proyecto, no hay un _boilerplate_, por lo que tú deberás definir
-la estructura de carpetas y archivos que consideres necesaria, puedes guiarte
-de los proyectos anteriores. Por lo tanto, los _tests_ y el _setup_ necesario
-para ejecutarlos serán hechos por ti misma :smiley:.
-
-### Responsive
-
-Debe verse bien en dispositivos de pantallas grandes (computadoras/es, laptops, etc.) y pequeñas (tablets, celulares, etc.). Te sugerimos seguir la técnica de `mobile first` (más detalles sobre esta técnica al final).
-
-### Tests unitarios
-
-Los tests unitarios deben cubrir un mínimo del 70% de _statements_, _functions_,
-_lines_, y _branches_.
 
 ### UI y comportamiento (User Interface / Interfaz de Usuario)
 
@@ -113,29 +204,6 @@ La interfaz debe permitir lo siguiente:
 
   ![Muro](https://user-images.githubusercontent.com/9284690/40994768-c52c3442-68c2-11e8-99a5-9e127e700dee.png)
 
-#### Otras consideraciones
-
-* La aplicación no debe dejar hacer publicaciones vacías de ningún tipo.
-* El usuario debe poder agregar, editar y eliminar contenido de la red
-  social.
-* El usuario debe poder definir la privacidad de lo que publica.
-* Al editar contenido, el contenido editado se verá automáticamente e
-  inmediatamente después de guardar.
-* Al recargar la página se deben poder ver los contenidos editados.
-
-Para armar la interfaz visual, utiliza como base alguna de estas guías de
-componentes:
-
-* [Guía Desktop 1](https://www.figma.com/file/F3aUqpHWOfZsEQifTPIleXo6/material-kit-free)
-* [Guía Desktop 2](https://www.figma.com/file/S39H0B1LOnaVICIUiApFTfoP/_Style-Guide---Desktop---Style-Guide)
-* [Guía Mobile 1](https://www.figma.com/file/00VTwmTNvLVaBLkxrMFbT8/Google-Material-Design)
-* [Guía Mobile 2](https://www.figma.com/file/O2Xraz3mraQHvevNsicMl91V/ejemplos-2)
-
-Personaliza estas guías con los colores y/o tipografías que creas convenientes.
-Recuerda que al hacer estas adaptaciones deberás seguir los fundamentos de
-_visual design_ como contraste, alineación, jerarquía, entre otros.
-
-## Implementación
 
 ### Front end
 
@@ -184,65 +252,6 @@ Esta es una técnica muy simple que te ayudará a:
   sprint.
 * Que el equipo trabaje de manera multidisciplinaria de manera natural.
 
-### Habilidades Blandas
-
-Trabajar en equipo es un gran desafío porque coordinarse no es una tarea fácil,
-y es más difícil entre tres que entre dos. Trata que tu equipo te entienda,
-facilitando siempre el diálogo dentro del squad.
-
-Planifica enumerando las tareas y distribuyéndolas, considerando los
-recursos, las habilidades, y el tiempo del que dispones. Planifica de manera
-que te permita avanzar en los distintos aspectos del proyecto de forma paralela,
-teniendo un tablero donde puedas ver en qué está trabajando cada compañera.
-
-Entrega tu trabajo a tu equipo a tiempo y colabora con el objetivo
-final del proyecto, lo que puede implicar ayudar a los demás miembros del equipo
-con sus pendientes, con el fin de entregar una red social de calidad.
-
-**La división del trabajo debe permitir que todo el equipo
-practique el aprendizaje de todas las habilidades esperadas. No se dividan el
-trabajo como en una fábrica**.
-
-Para que tu red social responda a las necesidades de tus usuarios, probablemente deberás adquirir nuevos conocimientos para implementar sus preferencias. Para conocer a los usuarios y sus preferencias, debes salir e investigar. Tienes que ejercitar tus habilidades de comunicación y toma de decisiones.
-Existen infinitas opciones, depende de ti el camino que escojas.
-
-
-Esta vez, haz _code review_ (feedback de tu código) con **otro squad**, para
-que puedas mejorar el producto. Mientras más feedback reciban, mejor.
-
-Esperamos que valores y escuches los comentarios y críticas de los demás,
-rescatando aquellos aspectos que sirven para tu crecimiento. Entrega siempre
-tu opinión de manera constructiva, fundamentada y coherente, con el propósito
-de ayudar a tus compañeras. Estos comentarios los debes hacer de manera honesta,
-empática e inmediata.
-
-Finalmente, deberás presentar el proyecto que creaste, al usuario que escogiste
-y las necesidades que lograste resolver en este proceso. Como siempre, sabemos
-que presentar puede ser una tarea difícil, y esperamos que tengas capacidad de
-síntesis y articules tus ideas con claridad para que logres mostrar tu trabajo
-y que los demás lo comprendan.
-
-## Hacker edition
-
-* Crear posts con imágenes.
-* Reemplazar `localStorage`: ¿le has compartido tu red social a tus amigxs? Si
-  lo has hecho, te darás cuenta de que ellxs no pueden ver tus posts ni tú el de
-  ellxs. Esto es debido a que `localStorage` almacena los datos localmente
-  (en tu navegador) por lo que esos datos no se comparten. Para resolver esto
-  podrías implementar una base de datos pero el tiempo podría jugar en contra,
-  para ello existen algunos servicios como [Firebase](https://firebase.google.com/products/database/)
-  que te proveen soluciones rápidas a este problema y solo usando su SDK :scream:.
-* Agregar la funcionalidad de amistad dentro de la red social, debo poder:
-  + Agregar amigos.
-  + Aceptar solicitudes de amigos.
-  + Eliminar amigos.
-  + Mostrar los posts que son sólo para mis amigos.
-
-## Entrega
-
-El proyecto será _entregado_ subiendo tu código a GitHub (`commit`/`push`) y la
-interfaz será desplegada usando GitHub pages u otro servicio de hosting que
-puedas haber encontrado en el camino.
 
 ### Entregables
 
@@ -251,100 +260,8 @@ puedas haber encontrado en el camino.
 En el `README.md` debes colocar cómo conociste el mercado de las redes sociales, cómo descubriste las necesidades de los usuarios, y cómo llegaste a la definición final de tu producto. Si tienes fotos de entrevistas, cuestionarios y/o sketches
 (bocetos) compártelos. Es importante que detalles:
 
-* Cuáles son los elementos básicos que tiene una red social.
-* Quiénes son los principales usuarios de producto.
-* Cómo descubriste las necesidades de los usuarios.
-* Qué problema resuelve el producto para estos usuarios.
-* Cuáles son los objetivos de estos usuarios en relación con el producto.
-* Cuáles son las principales funcionalidades del producto y cuál es su prioridad.
-* Cómo verificaste que el producto les está resolviendo sus problemas.
-* Cómo te asegurarás que estos usuarios usen este producto.
 
-Para poder llegar a estas definiciones te recomendamos revisar: benchmarks, entrevistas con usuarios y tests de usabilidad.
 
-#### 2) Diseño de la Interfaz de Usuario (prototipo de alta fidelidad)
-
-Debes definir cuál será el flujo que seguirá el usuario dentro de tu producto y
-con eso deberás diseñar la Interfaz de Usuario (UI - por sus siglas en inglés) de
-esta red social que siga este flujo. Para esto debes utilizar la herramienta de
-diseño visual de tu preferencia. Nosotros te recomendamos [Figma](https://www.figma.com/) dado que es una
-herramienta que funciona en el navegador y puedes crear una cuenta gratis. Sin
-embargo, eres libre de utilizar otros editores gráficos como Adobe XD, Illustrator,
-Photoshop, PowerPoint, Keynote, etc.
-
-Este diseño debe representar la solución que se implementará finalmente en
-código. 
-
-Tu diseño debe seguir los fundamentos de visual design, como: contraste,
-alineación, jerarquía, entre otros. Tip: revisa el contenido de UX de la unidad
-de visual design.
-
-#### 3) Implementación de la Interfaz de Usuario
-
-La idea para este proyecto es que el producto a desarrollar siga los
-lineamientos propuestos en el diseño de la interfaz de usuario. Asegúrate a lo
-largo de la implementación que los elementos propuestos están siendo
-implementados correctamente. (Hint: testing)
-
-## Evaluación
-
-### Tech
-
-| Habilidad | Nivel esperado |
-|-----------|----------------|
-| **JavaScript** | |
-| Estilo | 3
-| Nomenclatura/semántica | 3
-| Funciones/modularidad | 2
-| Estructuras de datos | 2
-| Tests | 2
-| **HTML** | |
-| Validación | 3
-| Estilo | 3
-| Semántica | 3
-| SEO | n/a
-| **CSS** | |
-| DRY | 3
-| Responsive | 3
-| **SCM** | |
-| Git | 3
-| GitHub | 3
-| **CS** | |
-| Lógica | 2
-| Arquitectura | 2
-| Patrones/paradigmas | n/a
-
-### UX
-
-| Habilidad | Nivel esperado |
-|-----------|----------------|
-| User Centricity | 3
-| Entrevistas | 2 |
-| Testing | 2
-| User Flow | 2
-| Jerarquía | 3
-| Alineación | 3
-| Contraste | 3
-| Color | 3
-| Tipografía | 3
-
-### Habilidades Blandas
-
-Para este proyecto esperamos que ya hayas alcanzado el nivel 3 en todas tus
-habilidades blandas. Te aconsejamos revisar la rúbrica:
-
-| Habilidad | Nivel esperado |
-|-----------|----------------|
-| Planificación y organización | 3
-| Autoaprendizaje | 3
-| Solución de Problemas | 3
-| Dar y recibir feedback | 3
-| Adaptabilidad | 3
-| Trabajo en equipo (trabajo colaborativo y responsabilidad) | 3
-| Comunicación eficaz | 3
-| Presentaciones | 3
-
-***
 
 ## Pistas / Tips / Lecturas complementarias
 
@@ -418,54 +335,3 @@ Otras:
 
 ***
 
-## Checklist
-
-### General
-
-* [ ] Producto final sigue los lineamientos del diseño.
-
-### `README.md`
-
-* [ ] Definición del producto:
-  * [ ] Cuáles son los elementos básicos que tiene una red social.
-  * [ ] Quiénes son los principales usuarios de producto.
-  * [ ] Cómo descubriste las necesidades de los usuarios.
-  * [ ] Qué problema resuelve el producto para estos usuarios.
-  * [ ] Cuáles son los objetivos de estos usuarios en relación con el producto.
-  * [ ] Cuáles son las principales funcionalidades del producto y cuál es su prioridad.
-  * [ ] Cómo verificaste que el producto les está resolviendo sus problemas.
-  * [ ] Cómo te asegurarás que estos usuarios usen este producto.
-* [ ] Benchmark de las principales redes sociales.
-* [ ] Resumen de entrevistas con usuarios.
-* [ ] Link/screenshots del prototipo de alta fidelidad.
-* [ ] Conclusiones de testing con el prototipo de alta fidelidad con usuarios.
-* [ ] Conclusiones de testing con el producto en HTML.
-
-### Pruebas / tests
-
-* [ ] Tests unitarios cubren un mínimo del 70% de statements, functions, lines y branches.
-* [ ] Pasa tests (y linters) (`npm test`).
-
-### Creación de cuenta (sign up)
-
-* [ ] Permite crear cuenta.
-* [ ] Valida email.
-* [ ] Valida password.
-* [ ] Muestra mensajes de error.
-
-### Inicio de sesión (sign in)
-
-* [ ] Permite iniciar sesión.
-* [ ] Valida email.
-* [ ] Valida password.
-* [ ] Muestra mensajes de error.
-
-### Muro (wall/feed)
-
-* [ ] Muestra _muro_.
-* [ ] Permite publicar nuevos posts.
-* [ ] Permite eliminar posts.
-* [ ] Pide confirmación antes de borrar posts.
-* [ ] Permite editar posts (in place).
-* [ ] Permite publicar y filtrar posts por público/yo.
-* [ ] Permite dar _like_ a los posts y llevar un conteo de ellos.
