@@ -1,29 +1,3 @@
-window.register = () => {
-	const emailRegister = emailRegister.value;
-	const nameRegister = nameRegister.value;
-	const userRegister = userRegister;
-	const passwordRegister = passwordRegister.value;
-	if( nameRegister && emailRegister && userRegister && passwordRegister !== ""){
-		const filtro = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i ;
-		if(!filtro.test(emailRegister) && passwordRegister.length < 7){
-			alert ("Ingrese un e-mail y contraseña válidx")
-		}
-		else{
-			firebase.auth().createUserWithEmailAndPassword(emailValue,passwordValue)
-    .then(() =>{
-        alert("Bienvenidx tu registro fue exitoso comencemos 💕");
-    })
-    .catch((error)=>{
-        console.log("error de firebase >" +error.code);
-        console.log("errorfirebase,mensaje >" +error.message);
-        //alert("Usuarix ya esta registrado")
-    });
-		}
-	}
-	else{
-		alert("Ingrese todos los campos con información válida")
-	}
-}
 window.login = () => {
 	const emailValue = email.value;
 	const passwordValue = password.value;
@@ -46,6 +20,31 @@ window.login = () => {
 	}
 	else if(emailValue || passwordValue == ""){
 		alert("Ingrese e-mail y contraseña válida")
+	}
+}
+window.register = () => {
+	let nameRegister = nombreR.value;
+	const emailRegister = emailR.value;
+	const passwordRegister = passwordR.value;
+	if( nameRegister && emailRegister && passwordRegister !== ""){
+		const filtro = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i ;
+		if(!filtro.test(emailRegister)){
+			alert ("Ingrese un e-mail y contraseña válidx")
+		}
+		else{
+			firebase.auth().createUserWithEmailAndPassword(emailRegister,passwordRegister)
+    .then(() =>{
+        alert("Bienvenidx tu registro fue exitoso comencemos 💕");
+    })
+    .catch((error)=>{
+        console.log("error de firebase >" +error.code);
+        console.log("errorfirebase,mensaje >" +error.message);
+        //alert("Usuarix ya esta registrado")
+    });
+		}
+	}
+	else{
+		alert("Ingrese todos los campos con información válida")
 	}
 }
 loginFacebook=()=>{
