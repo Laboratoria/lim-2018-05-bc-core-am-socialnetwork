@@ -7,7 +7,6 @@ window.onload = () => {
       loginUser.style.display = "none";
       registerUser.style.display ="none";
       alert("Hola, ya puedes difrutar de esta red social");
-
     } else {
       //si no estamos logeados
       loginUser.style.display = "block";
