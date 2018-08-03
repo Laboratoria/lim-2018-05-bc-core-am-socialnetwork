@@ -6,11 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-
   <!--Íconos de Google, se importan aquí-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
@@ -22,6 +19,7 @@
   <!--Aquí se crea "container" para centrar todo lo que esté dentro de este div-->
   <section class="container">
     <img class="responsive-img  circle" src="../images/logocircle.png" alt="sevenColors">
+    <!--_________________INICIO DIV DE LOGIN______________________ -->
     <div class="container" id="loginUser">
       <div class="section">
         <p>Sé libre.
@@ -44,15 +42,15 @@
         </div>
       </div>
     </div>
-    <!--Finaliza section Login -->
-    <!--Aquí comienza section Register -->
+    <!--__________________FIN DIV DE LOGIN________________________ -->
+
+    <!--_________________INICIO DIV DE REGISTER______________________ -->
     <div class="container" id="registerUser">
-      <input type="button" onclick="back()" íd="buttonBack"name="volver atrás" value="¿Ya tienes una cuenta? Inicia sesión">
+      <input type="button" onclick="back()" íd="buttonBack" name="volver atrás" value="¿Ya tienes una cuenta? Inicia sesión">
       <p>Únete a esta familia</p>
       <div class="col s3 m6 grey lighten-5">
         <input id="nameRegister" type="text" placeholder="🙌;Nombre y Apellidos" required>
         <input id="emailRegister" type="email" placeholder=" 🙏-Correo Electrónico" required>
-        <input id="userRegister" type="text" placeholder="🙆 -Usuario" required>
         <input id="passwordRegister" type="password" placeholder=" 🙊-Contraseña" required>
       </div>
       <!--  <input id"politics" type="checkbox" name="l"> 
@@ -64,6 +62,7 @@
         <button class="btn red"> Regístrate con G-Mail</button>
       </div>
     </div>
+    <!--__________________FIN DIV DE REGISTER________________________ -->
   </section>
   <!--Aquí finaliza section Register -->
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
@@ -78,9 +77,9 @@
       messagingSenderId: "430758923648"
     };
     firebase.initializeApp(config);
-
   </script>
   <script src="main.js"></script>
+  <script src="data.js"></script>
   <!-- Compilando JavaScript con Materialize-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
