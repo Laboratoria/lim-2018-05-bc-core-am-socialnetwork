@@ -17,6 +17,7 @@
   <!--Aquí se crea "container" para centrar todo lo que esté dentro de este div-->
   <section class="container section">
     <img class="responsive-img  circle" src="../images/logocircle.png" alt="sevenColors">
+    <!--_________________INICIO DIV DE LOGIN______________________ -->
     <div class="container" id="loginUser">
       <div class="section">
         <p>Sé libre.
@@ -39,15 +40,19 @@
         </div>
       </div>
     </div>
-    <!--Finaliza section Login -->
-    <!--Aquí comienza section Register -->
+    <!--__________________FIN DIV DE LOGIN________________________ -->
+
+    <!--_________________INICIO DIV DE REGISTER______________________ -->
     <div class="container" id="registerUser">
-      <input type="button" onclick="back()" íd="buttonBack"name="volver atrás" value="¿Ya tienes una cuenta? Inicia sesión">
+      <input type="button" onclick="back()" íd="buttonBack" name="volver atrás" value="¿Ya tienes una cuenta? Inicia sesión">
       <p>Únete a esta familia</p>
       <div class="col s3 m6 grey lighten-5">
         <input id="nameRegister" type="text" placeholder="🙌;Nombre y Apellidos" required>
         <input id="emailRegister" type="email" placeholder=" 🙏-Correo Electrónico" required>
+<<<<<<< HEAD
         <!--<input id="userRegister" type="text" placeholder="🙆 -Usuario" required>-->
+=======
+>>>>>>> 1bf482cd960848047b8dc4059f5e78300e646924
         <input id="passwordRegister" type="password" placeholder=" 🙊-Contraseña" required>
       </div>
       <!--  <input id"politics" type="checkbox" name="l"> 
@@ -59,6 +64,7 @@
         <button class="btn red"> Regístrate con G-Mail</button>
       </div>
     </div>
+    <!--__________________FIN DIV DE REGISTER________________________ -->
   </section>
   <!--Aquí finaliza section Register -->
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
@@ -75,8 +81,16 @@
     firebase.initializeApp(config);
   </script>
   <script src="main.js"></script>
+<<<<<<< HEAD
   <script src="app.js"></script>
   <!-- Compilando JavaScript con Materialize-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
+=======
+  <script src="data.js"></script>
+  <!-- Compilando JavaScript con Materialize-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</body>
+
+>>>>>>> 1bf482cd960848047b8dc4059f5e78300e646924
 </html>
