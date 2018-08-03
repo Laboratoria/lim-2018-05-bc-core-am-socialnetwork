@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +12,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <!--SE TRABAJARÁ CON 2 HTML LOGIN Y REGISTER SIN BOTÓN "CERRAR SESIÓN" -->
-
 <body>
   <!--Primer section Login -->
   <!--Aquí se crea "container" para centrar todo lo que esté dentro de este div-->
-  <section class="container">
+  <section class="container section">
     <img class="responsive-img  circle" src="../images/logocircle.png" alt="sevenColors">
     <!--_________________INICIO DIV DE LOGIN______________________ -->
     <div class="container" id="loginUser">
@@ -25,8 +23,8 @@
         <p>Sé libre.
           <br> Comparte y conoce a nuestro Perú.</p>
         <div class="col s3 m3 grey lighten-5">
-          <input id="email" type="email" placeholder=" &#128273;Email" required>
-          <input id="password" type="password" placeholder=" &#128272;Contraseña" required>
+          <input id="emailLogin" type="email" placeholder=" &#128273;Email" required>
+          <input id="passwordLogin" type="password" placeholder=" &#128272;Contraseña" required>
           <button class="btn waves-effect ligth" id="login" onclick="login()"> Iniciar sesión</button>
           <br>
           <button class="btn-flat-small grey" name="olvidasteContraseña">¿Olvidaste la contraseña?</button>
@@ -38,7 +36,7 @@
         </div>
         <div class="row">
           <p> ¿No tienes una cuenta?</p>
-          <button id="logInButton" onclick="creatCount()" class="btn pink">!Crear cuenta!</button>
+          <button id="logInButton" onclick="createAccount()" class="btn pink">!Crea tu cuenta!</button>
         </div>
       </div>
     </div>
@@ -55,14 +53,9 @@
       </div>
       <!--  <input id"politics" type="checkbox" name="l"> 
     <p> Acepto las condiciones de Servicio y Políticas de Urpi </p> -->
-<<<<<<< HEAD
-      <button id="register" onclick="register()" class="btn orange">Registrarme</button>
-      <div class="row"> o
-=======
 
       <button id="register" onclick="register()" class="btn orange">Registrarme</button>
         <div class="row"> o
->>>>>>> b8e70e5dc6916685c07f1ee42d2009fe93dbbcff
         <br>
         <button class="btn blue" id="loginFacebook" onclick="loginFacebook()"> Regístrate con Facebook</button>
         <button class="btn red"> Regístrate con G-Mail</button>
@@ -89,5 +82,4 @@
   <!-- Compilando JavaScript con Materialize-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
-
 </html>
