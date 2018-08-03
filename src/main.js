@@ -1,6 +1,7 @@
 window.login = () => {
-	const emailValue = email.value;
-	const passwordValue = password.value;
+	//Se declaran estas variables para llamar al "id" de email y contraseña de login.html
+	const emailValue = document.getElementById('emailLogin').value;
+	const passwordValue = document.getElementById('passwordLogin').value;
 	if (emailValue && passwordValue !== ""){
 		const filtro = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i ;
 		if(!filtro.test(emailValue)){
@@ -9,7 +10,7 @@ window.login = () => {
 		else{
 			firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
 		.then(() => {
-			console.log("usuario con login exitoso")
+			console.log("Usuario con login exitoso")
 		})
 		.catch((error) => {
 			console.log("error de firebase >" + error.code);
