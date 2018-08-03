@@ -2,7 +2,8 @@ window.onload =()=>{
     firebase.auth().onAuthStateChanged((user)=>{
         if(user){
             //Si está registrado,entonces iniciará sesión
-            loggedIn.style.display="block";
+            const loggedIn = document.getElementById('loggedIn');
+            window.location.assign('home.html');
             loginUser.style.display = "none";
             registerUser.style.display ="none";
             alert("Hola, ya puedes difrutar de esta red social");
@@ -10,13 +11,13 @@ window.onload =()=>{
             //si no estamos logeados
             loginUser.style.display = "block";
             registerUser.style.display ="none";
-            loggedIn.style.display="none";
+            //loggedIn.style.display="none";
         }
     });
-window.creatCount=(user) => {
+  window.createAccount=(user) => { // 
         loginUser.style.display = "none";
         registerUser.style.display ="block";
-        loggedIn.style.display="none";
+        // loggedIn.style.display="none";
     }
   }
 
@@ -26,31 +27,36 @@ window.creatCount=(user) => {
     loggedIn.style.display="none";
 }
 
-  window.register =() => {
-    const emailValue = email.value;
-    const passwordValue = password.value;
-    firebase.auth().createUserWithEmailAndPassword(emailValue,passwordValue)
-    .then(() =>{
-        alert("Bienvenidx tu registro fue exitoso comencemos 💕");
-    })
-    .catch((error)=>{
-        console.log("error de firebase >" +error.code);
-        console.log("errorfirebase,mensaje >" +error.message);
-        //alert("Usuarix ya esta registrado")
-    });
+  window.login = () => {
+    const emailValue = document.getElementById('emailLogin').value;
+    const passwordValue = document.getElementById('passwordLogin').value;
+    const cb = (error, result) => {
+        if(error) {
+            console.log("error de firebase >" +error.code);
+            console.log("errorfirebase,mensaje >" +error.message);
+            //alert("Usuarix ya esta registrado")
+        } else {
+            alert("Bienvenidx tu registro fue exitoso comencemos 💕");
+            console.log(result)
+        }
+    }
+    app.login(emailValue, passwordValue, cb)
   }
-  window.login=()=>{
-    const emailValue = email.value;
-    const passwordValue = password.value;
-    firebase.auth().signInWithEmailAndPassword(emailValue,passwordValue)
-    .then(()=>{
-        console.log("usuario con login exitoso");
-        window.location.assign("home.html");
-    })
-    .catch((error)=>{
-        console.log("error de firebase >"+ error.code);
-        console.log("error de firebase ,mensaje >" +error.message);
-        alert("Aun no estas registradx ¿que esperas comienza a registrarte y veras todos los beneficios; o quizas tu contraseña no es correcta 😨");    })
+  window.register=()=>{
+    const nameValueR= document.getElementById('nameRegister').value;
+    const emailValueR =document.getElementById('emailRegister').value;
+    const passwordValueR =document.getElementById('passwordRegister').value;
+    cb= (error,result) => {
+        if(error){
+            console.log("error de firebase >"+ error.code);
+            console.log("error de firebase ,mensaje >" +error.message);
+            alert("Aun no estas registradx ¿que esperas comienza a registrarte y veras todos los beneficios; o quizas tu contraseña no es correcta 😨");
+        } else{
+            console.log("usuario con login exitoso");
+            window.location.assign("home.html");
+        }
+    }
+    app.register(nameValueR, emailValueR, passwordValueR, cb)
   } 
   logout=()=>{
     firebase.auth().signOut()
@@ -60,8 +66,6 @@ window.creatCount=(user) => {
     })
     .cath();
   }
-
-
   loginFacebook=()=>{
     const provider = new firebase.auth.FacebookAuthProvider();
     //provider.addScope("user_birthday");tiene que pedirle permiso a facebook

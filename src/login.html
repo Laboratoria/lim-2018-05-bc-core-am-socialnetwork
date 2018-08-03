@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-
   <!--Íconos de Google, se importan aquí-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <!--SE TRABAJARÁ CON 2 HTML LOGIN Y REGISTER SIN BOTÓN "CERRAR SESIÓN" -->
-
 <body>
   <!--Primer section Login -->
   <!--Aquí se crea "container" para centrar todo lo que esté dentro de este div-->
-  <section class="container">
+  <section class="container section">
     <img class="responsive-img  circle" src="../images/logocircle.png" alt="sevenColors">
     <div class="container" id="loginUser">
       <div class="section">
         <p>Sé libre.
           <br> Comparte y conoce a nuestro Perú.</p>
         <div class="col s3 m3 grey lighten-5">
-          <input id="email" type="email" placeholder=" &#128273;Email" required>
-          <input id="password" type="password" placeholder=" &#128272;Contraseña" required>
+          <input id="emailLogin" type="email" placeholder=" &#128273;Email" required>
+          <input id="passwordLogin" type="password" placeholder=" &#128272;Contraseña" required>
           <button class="btn waves-effect ligth" id="login" onclick="login()"> Iniciar sesión</button>
           <br>
           <button class="btn-flat-small grey" name="olvidasteContraseña">¿Olvidaste la contraseña?</button>
@@ -40,7 +35,7 @@
         </div>
         <div class="row">
           <p> ¿No tienes una cuenta?</p>
-          <button id="logInButton" onclick="creatCount()" class="btn pink">!Crear cuenta!</button>
+          <button id="logInButton" onclick="createAccount()" class="btn pink">!Crea tu cuenta!</button>
         </div>
       </div>
     </div>
@@ -52,12 +47,12 @@
       <div class="col s3 m6 grey lighten-5">
         <input id="nameRegister" type="text" placeholder="🙌;Nombre y Apellidos" required>
         <input id="emailRegister" type="email" placeholder=" 🙏-Correo Electrónico" required>
-        <input id="userRegister" type="text" placeholder="🙆 -Usuario" required>
+        <!--<input id="userRegister" type="text" placeholder="🙆 -Usuario" required>-->
         <input id="passwordRegister" type="password" placeholder=" 🙊-Contraseña" required>
       </div>
       <!--  <input id"politics" type="checkbox" name="l"> 
     <p> Acepto las condiciones de Servicio y Políticas de Urpi </p> -->
-      <button id="" onclick="register()" class="btn orange">Conoce a nuestro Perú</button>
+      <button id="" onclick="register()" class="btn orange">Regístrate</button>
       <div class="row"> o
         <br>
         <button class="btn blue" id="loginFacebook" onclick="registerFacebook()"> Regístrate con Facebook</button>
@@ -78,11 +73,10 @@
       messagingSenderId: "430758923648"
     };
     firebase.initializeApp(config);
-
   </script>
   <script src="main.js"></script>
+  <script src="app.js"></script>
   <!-- Compilando JavaScript con Materialize-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
-
 </html>
