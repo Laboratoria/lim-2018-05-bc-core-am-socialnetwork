@@ -30,12 +30,12 @@ Aquí se adjuntan
 -fotos de entrevistas, cuestionarios y/o sketches
 (bocetos). (link de nuestro primer formulario)
 
-## creamos una encuesta para tener más información acerca de las preferencias de los usuarios:
+### creamos una encuesta para tener más información acerca de las preferencias de los usuarios:
 ![encuesta](https://scontent-scl1-1.xx.fbcdn.net/v/t1.15752-9/37790019_1725330907520387_4919293470247485440_n.png?_nc_cat=0&oh=428ac94ac0cb4d69195b871e6b377835&oe=5BDA4C18)
 
 ![encuesta primer plano](https://scontent-scl1-1.xx.fbcdn.net/v/t1.15752-9/37710085_1725340624186082_2109743959348609024_n.png?_nc_cat=0&oh=cc3f69357f31ec20dce9559936be6a65&oe=5BD7CF6C)
 
-## resultados:
+### resultados:
 
 ![resultados](https://scontent-scl1-1.xx.fbcdn.net/v/t1.15752-9/37771499_1726985594021585_8616899839793299456_n.png?_nc_cat=0&oh=0ab1cdd1bd67bb1adb04bd5009937575&oe=5C0BA641)
 
