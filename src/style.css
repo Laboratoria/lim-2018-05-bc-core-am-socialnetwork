@@ -3,8 +3,25 @@ body{
   background-repeat: no-repeat;
   font-family: 'Modern Antiqua', cursive;
   font-family: 'Eczar', serif;
+  color: blanchedalmond;
+}
+#emailLogin{
+  background-color: rgba(245, 241, 241, 0.336);
+  border:  0.05em solid #A8A8A8;
+  border-radius: 1em;
+}
+#passwordLogin{
+  background-color: rgba(245, 241, 241, 0.336);
+  border: 0.05em solid #A8A8A8;
+  border-radius: 1em;
 }
 .logginFacebook{
   width: 4%;
   height: 1%;
+}
+.btn{
+  border-radius: 1em;
+}
+.btn-flat-small grey{
+  border-radius: 2em;
 }
