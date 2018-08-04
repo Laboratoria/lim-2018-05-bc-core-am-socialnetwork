@@ -12,7 +12,6 @@ window.onload = () => {
       loginUser.style.display = "block";
       registerUser.style.display ="none";
       //loggedIn.style.display="none";
-
     }
   });
   window.createAccount = (user) => {
