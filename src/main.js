@@ -1,28 +1,24 @@
-window.login = () => {
-	//Se declaran estas variables para llamar al "id" de email y contraseña de login.html
-	const emailValue = document.getElementById('emailLogin').value;
-	const passwordValue = document.getElementById('passwordLogin').value;
-	if (emailValue && passwordValue !== ""){
-		const filtro = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i ;
-		if(!filtro.test(emailValue)){
-			alert("Por favor digite un e-mail valido")
-		}
-		else{
-			firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
-		.then(() => {
-			console.log("Usuario con login exitoso")
-		})
-		.catch((error) => {
-			console.log("error de firebase >" + error.code);
-			console.log("error de firebase ,mensaje >" + error.message);
-			alert("Aun no estas registradx ¿que esperas comienza a registrarte y veras todos los beneficios; o quizas tu contraseña no es correcta 😨");
-		})
-		}
-	}
-	else if(emailValue || passwordValue == ""){
-		alert("Ingrese e-mail y contraseña válida")
-	}
+window.onload = () => {
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      //Si está registrado,entonces iniciará sesión
+      const loggedIn = document.getElementById('loggedIn');
+      window.location.assign('home.html');
+      loginUser.style.display = "none";
+      registerUser.style.display ="none";
+    } else {
+      //si no estamos logeados
+      loginUser.style.display = "block";
+      registerUser.style.display ="none";
+      //loggedIn.style.display="none";
+    }
+  });
+  window.createAccount = (user) => {
+    loginUser.style.display = "none";
+    registerUser.style.display = "block";
+  }
 }
+<<<<<<< HEAD
 window.register = () => {
 	let nameRegister = nombreR.value;
 	const emailRegister = emailR.value;
@@ -63,3 +59,9 @@ loginFacebook=()=>{
 			console.log("error de firebase ,mensaje >" +error.message);
 	});
 }
+=======
+window.back = () => {
+  loginUser.style.display = "block";
+  registerUser.style.display = "none";
+}
+>>>>>>> master

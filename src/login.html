@@ -11,12 +11,16 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleLogin.css">
+
+  <!-- firebase-->
+   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
 </head>
 <!--SE TRABAJARÁ CON 2 HTML LOGIN Y REGISTER SIN BOTÓN "CERRAR SESIÓN" -->
 
 <body>
-
   <!--Primer section Login -->
   <!--Aquí se crea "container" para centrar todo lo que esté dentro de este div-->
   <section class="container section">
@@ -28,7 +32,7 @@
     <!--_________________INICIO DIV DE LOGIN______________________ -->
     <div class="container" id="loginUser">
       <div>
-        <div class="container  ">
+        <div class="container ">
           <input class=" validate" id="emailLogin" type="email" placeholder=" &#128273;Email" required>
           <input class=" validate" id="passwordLogin" type="password" placeholder=" &#128272;Contraseña" required>
         </div>
@@ -38,12 +42,10 @@
           <br>
           <button class="btn  green " name="olvidasteContraseña">¿Olvidaste la contraseña?</button>
         </div>
-
-
         <div class="section center align">
           <h6>o Ingresa con</h6>
           <br>
-          <button class="btn  blue darken-4" id="loginFacebook" onclick="loginFacebook()"> Conéctate con Facebook</button>
+          <button class="btn blue darken-4" id="loginFacebook" onclick="loginFacebook()"> Conéctate con Facebook</button>
           <button class="btn red accent-4"> Conéctate con G-Mail</button>
         </div>
         <div class="center align">
@@ -53,24 +55,23 @@
       </div>
     </div>
     <!--__________________FIN DIV DE LOGIN________________________ -->
-
     <!--_________________INICIO DIV DE REGISTER______________________ -->
     <div class="container" id="registerUser">
-      <input  class="btn green" type="button" onclick="back()" íd="buttonBack" name="volver atrás" value=" < ">
+      <input class="btn green" type="button" onclick="back()" íd="buttonBack" name="volver atrás" value=" < ">
       <h5>Únete a esta familia</h5>
-      <div class="col s3 m6 grey lighten-5">
-        <input id="nombreR" type="text" placeholder="🙌-Nombre y Apellidos" required>
+      <div class="registerB container">
+        <input id="nameR" type="text" placeholder="🙌-Nombre y Apellidos" required>
         <input id="emailR" type="email" placeholder=" 🙏-Correo Electrónico" required>
         <input id="passwordR" type="password" placeholder=" 🙊-Contraseña" required>
       </div>
       <!--  <input id"politics" type="checkbox" name="l"> 
     <p> Acepto las condiciones de Servicio y Políticas de Urpi </p> -->
-
-      <button id="register" onclick="register()" class="btn orange">Registrarme</button>
-      <div class="row"> o
+      <div class="section center align row">
+        <button id="register" onclick="register()" class="btn orange ">Registrarme</button>
+        <h6>o Regístrate con</h6>
         <br>
-        <button class="btn blue" id="loginFacebook" onclick="loginFacebook()"> Regístrate con Facebook</button>
-        <button class="btn red"> Regístrate con G-Mail</button>
+        <button class="btn blue darken-4" id="loginFacebook" onclick="loginFacebook()">Facebook</button>
+        <button class="btn red accent-4"> G-Mail</button>
       </div>
     </div>
     <!--__________________FIN DIV DE REGISTER________________________ -->
@@ -91,7 +92,7 @@
   </script>
   <script src="main.js"></script>
   <script src="data.js"></script>
-  <script src="style.css"></script>
+
   <!-- Compilando JavaScript con Materialize-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
