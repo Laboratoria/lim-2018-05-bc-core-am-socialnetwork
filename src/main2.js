@@ -1,6 +1,5 @@
 //Inicializar nav-parte superior
 document.addEventListener('DOMContentLoaded', function() {
-	const elems = document.querySelectorAll('.sidenav');
-	// const instances = M.Sidenav.init(elems, options);
+	var elems = document.querySelectorAll('.sidenav');
+	var instances = M.Sidenav.init(elems, options);
 });
-
