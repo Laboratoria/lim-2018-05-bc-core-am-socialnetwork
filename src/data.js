@@ -24,7 +24,7 @@ window.login = () => {
 	}
 }
 window.register = () => {
-	let nameRegister = nombreR.value;
+	let nameRegister = nameR.value;
 	const emailRegister = emailR.value;
 	const passwordRegister = passwordR.value;
 	if( nameRegister && emailRegister && passwordRegister !== ""){
