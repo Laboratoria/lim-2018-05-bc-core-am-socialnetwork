@@ -15,31 +15,34 @@
 <!--SE TRABAJARÁ CON 2 HTML LOGIN Y REGISTER SIN BOTÓN "CERRAR SESIÓN" -->
 <body>
   <!--Navbar para la parte superior :Logo en vista diferente ,perfil y cerrar sesión-->
-    <nav >
-        <div class="nav-wrapper red">
-                <a class="responsive-img container" title="logoDiferente" href="home.html">
-                  <img src="../images/vistaLogo.png" alt="vistaDiferenteLogo" />
-                </a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="">Mi perfil</a></li>
-            <li><a href=""></a></li>
-            <li><a href="">Ajustes</a></li>
-            <li></a>
-            <button id="logOutButton" class="btn waves-effect col s " onclick="logout()"> Cerrar Sesión</button>
-          </ul>
-        </div>
-      </nav>
-      <!--Nav para móvil-->
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Mi perfil</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-       <!--Nav para móvil-->
+  <nav class="red">
+      <div class="nav-wrapper">
+          <a class="responsive-img container" title="logoDiferente" href="home.html">
+              <img src="../images/vistaLogo.png" alt="vistaDiferenteLogo" />
+          </a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">Mi perfil</a></li>
+          <li><a href="home.html">Configuración</a></li>
+          <li><a href="home.html">Javascript</a></li>
+          <li><a href="home.html">Explorar</a></li>
+          <button id="logOutButton" class="btn waves-effect col s " onclick="logout()"> Cerrar Sesión</button>
+        </ul>
+      </div>
+      <!--Aquí finaliza nav para desktop-->
+    </nav>
+     <!--Nav para móvil-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="home.html">Mi perfil</a></li>
+        <li><a href="home.html">Configuración</a></li>
+        <li><a href="home.html">Javascript</a></li>
+        <li><a href="home.html">Explorar</a></li>
+        <button id="logOutButton" class="btn waves-effect col s " onclick="logout()"> Cerrar Sesión</button>
+    </ul>
+    <!--Aquí finaliza nav para móvil-->
+    </nav>
        <!--Aquí se visualiza el input de postear - todos los elementos requeridos para el muro -->
-  <section class="section container">
+   <section class="section container">
       <div class="row center align">
           <form class="col s10">
             <div class="row">
@@ -48,7 +51,7 @@
                   <label for="textarea1">Comparte tu experiencia</label>
               </div>
                 <button class="btn right" id="publicarPost" onclick=""> Publicar</button>
-              <select name="Privacidad" disable="disable"id="privacity">
+              <select name="" disable="disable"id="privacity">
                     <option value="Público">Público</option>
                     <option value="Solo yo">Solo yo</option>
               </select>
@@ -70,6 +73,12 @@
     };
     firebase.initializeApp(config);
 
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+ $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
   </script>
   <script src="main2.js"></script>
   <script src="data2.js"></script>
