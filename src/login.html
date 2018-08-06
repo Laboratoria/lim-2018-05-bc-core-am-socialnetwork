@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,14 @@
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link rel="stylesheet" href="styleLogin.css">
+
+  <!-- firebase-->
+   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
 </head>
 <!--SE TRABAJARÁ CON 2 HTML LOGIN Y REGISTER SIN BOTÓN "CERRAR SESIÓN" -->
+
 <body>
   <!--Primer section Login -->
   <!--Aquí se crea "container" para centrar todo lo que esté dentro de este div-->
@@ -50,17 +57,17 @@
     <!--__________________FIN DIV DE LOGIN________________________ -->
     <!--_________________INICIO DIV DE REGISTER______________________ -->
     <div class="container" id="registerUser">
-      <input  class="btn green" type="button" onclick="back()" íd="buttonBack" name="volver atrás" value=" < ">
+      <input class="btn green" type="button" onclick="back()" íd="buttonBack" name="volver atrás" value=" < ">
       <h5>Únete a esta familia</h5>
-      <div class="registerB container" >
-        <input id="nameR" type="text" placeholder="🙌-Nombre y Apellidos" required> 
+      <div class="registerB container">
+        <input id="nameR" type="text" placeholder="🙌-Nombre y Apellidos" required>
         <input id="emailR" type="email" placeholder=" 🙏-Correo Electrónico" required>
         <input id="passwordR" type="password" placeholder=" 🙊-Contraseña" required>
       </div>
       <!--  <input id"politics" type="checkbox" name="l"> 
     <p> Acepto las condiciones de Servicio y Políticas de Urpi </p> -->
-      <div class="section center align row"> 
-          <button id="register" onclick="register()" class="btn orange ">Registrarme</button>
+      <div class="section center align row">
+        <button id="register" onclick="register()" class="btn orange ">Registrarme</button>
         <h6>o Regístrate con</h6>
         <br>
         <button class="btn blue darken-4" id="loginFacebook" onclick="loginFacebook()">Facebook</button>
@@ -85,8 +92,9 @@
   </script>
   <script src="main.js"></script>
   <script src="data.js"></script>
-  
+
   <!-- Compilando JavaScript con Materialize-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
+
 </html>
