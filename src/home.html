@@ -15,50 +15,75 @@
 <!--SE TRABAJARÁ CON 2 HTML LOGIN Y REGISTER SIN BOTÓN "CERRAR SESIÓN" -->
 <body>
   <!--Navbar para la parte superior :Logo en vista diferente ,perfil y cerrar sesión-->
-  <nav class="red">
-      <div class="nav-wrapper">
-          <a class="responsive-img container" title="logoDiferente" href="home.html">
-              <img src="../images/vistaLogo.png" alt="vistaDiferenteLogo" />
-          </a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="home.html">Mi perfil</a></li>
-          <li><a href="home.html">Configuración</a></li>
-          <li><a href="home.html">Javascript</a></li>
-          <li><a href="home.html">Explorar</a></li>
-          <button id="logOutButton" class="btn waves-effect col s " onclick="logout()"> Cerrar Sesión</button>
-        </ul>
-      </div>
-      <!--Aquí finaliza nav para desktop-->
-    </nav>
-     <!--Nav para móvil-->
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="home.html">Mi perfil</a></li>
-        <li><a href="home.html">Configuración</a></li>
-        <li><a href="home.html">Javascript</a></li>
-        <li><a href="home.html">Explorar</a></li>
-        <button id="logOutButton" class="btn waves-effect col s " onclick="logout()"> Cerrar Sesión</button>
+<nav class="red">
+  <div class="nav-wrapper">
+    <a class="responsive-img container" title="logoDiferente" href="home.html">
+      <img src="../images/vistaLogo.png" alt="vistaDiferenteLogo" />
+    </a>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li>
+        <a href="home.html">Mi perfil</a>
+      </li>
+      <li>
+        <a href="home.html">Configuración</a>
+      </li>
+      <li>
+        <a href="home.html">Javascript</a>
+      </li>
+      <li>
+        <a href="home.html">Explorar</a>
+      </li>
+      <button id="logOutButton" class="btn waves-effect col s " onclick="logout()"> Cerrar Sesión</button>
     </ul>
-    <!--Aquí finaliza nav para móvil-->
-    </nav>
+  </div>
+  <!--Aquí finaliza nav para desktop-->
+</nav>
+<!--Nav para móvil-->
+<ul class="sidenav" id="mobile-demo">
+  <li>
+    <a href="home.html">Mi perfil</a>
+  </li>
+  <li>
+    <a href="home.html">Configuración</a>
+  </li>
+  <li>
+    <a href="home.html">Javascript</a>
+  </li>
+  <li>
+    <a href="home.html">Explorar</a>
+  </li>
+  <button id="logOutButton" class="btn waves-effect col s " onclick="logout()"> Cerrar Sesión</button>
+</ul>
+<!--Aquí finaliza nav para móvil-->
+</nav>
        <!--Aquí se visualiza el input de postear - todos los elementos requeridos para el muro -->
-   <section class="section container">
-      <div class="row center align">
-          <form class="col s10">
-            <div class="row">
-              <div class="input-field col s12">
-                  <textarea id="textarea1" class="materialize-textarea"></textarea>
-                  <label for="textarea1">Comparte tu experiencia</label>
-              </div>
-                <button class="btn right" id="publicarPost" onclick=""> Publicar</button>
-              <select name="" id="">
-                    <option value="Público">Público</option>
-                    <option value="Solo yo">Solo yo</option>
-              </select>
-              </div>
-          </form>
+<section class="section container">
+  <div class="row center align">
+    <form class="col s10" action="home.html" id="formPrivacity">Cuéntale al mundo cuanto,donde
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea  id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Comparte tu experiencia</label>
+          <button class="btn right" id="publicarPost" onclick=""> Publicar</button>
+          <div class="col 3">
+            <select name="jnjn" disable="disable" id="privacity">
+              <option value="ds" class="value">Privacidad</option>
+              <option value="sds" class="value">Todos</option>
+              <option value="sds" class="value">Solo yo</option>
+            </select>
+          </div>
+        </div>
+
+
+
+
       </div>
-  </section>
+    </form>
+  </div>
+</section>
    <!--Aquí termina visualiza el input de postear - todos los elementos requeridos para el muro -->
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
   <script>
