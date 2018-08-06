@@ -1,8 +1,8 @@
 // Funcion LogOut = Cerrar Sesion
-logout=()=>{
+logout = () => {
 	firebase.auth().signOut()
-	.then(()=>{
+		.then(() => {
 			window.location.assign("login.html");
-	})
-	.cath();
+		})
+		.cath();
 }
