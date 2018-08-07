@@ -1,3 +1,25 @@
+// const dataBaseUsers = () => {
+// 	const dataUser = {
+// 		uid: user.iud,
+// 		Nombre: ,
+// 		Correo:,
+
+// 	}
+// }
+// Estado del usuario actual
+auth.onAuthStateChanged((user) => {
+	if (user) {
+		// Usuario está logueado
+		console.log(user, 'is logged in');
+		db.doc(`users/${user.uid}`).set({
+		username: user.displayName,
+		email: user.email,
+		})
+	} else {
+		// Usuario no está logueado
+		console.log(user, 'is signed out');
+	}
+ })// Estado del usuario actual
 window.login = () => {
   //Se declaran estas variables para llamar al "id" de email y contraseña de login.html
   const emailValue = document.getElementById('emailLogin').value;
@@ -9,6 +31,7 @@ window.login = () => {
     } else {
       firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
         .then(() => {
+					// console.log("User >"+ JSON.stringify(user));
           console.log("Usuario con login exitoso")
         })
         .catch((error) => {
@@ -21,27 +44,23 @@ window.login = () => {
     alert("Ingrese e-mail y contraseña válida")
   }
 }
-const almacenar = () => {
-  //este codigo hace que el usuario se guarde en la base de datos con la fecha y hora de firebase y no con la hora de la maquina
-  const firestore = firebase.firestore();
-  const settings = {
-    timestampsInSnapshots: true
-  };
-  firestore.settings(settings);
-  //con esta funcion hace que se cree una coleccion en firestore
-  const db = firebase.firestore();
-  db.collection("users").add({
-      Nombre: nameR.value,
-      Email: emailR.value,
-      Contraseña: passwordR.value,
-    })
-    .then(function (docRef) {
-      console.log("Document written with ID: ", docRef.id);
-    })
-    .catch(function (error) {
-      console.error("Error adding document: ", error);
-    });
-}
+// const almacenar = () => {
+//   //este codigo hace que el usuario se guarde en la base de datos con la fecha y hora de firebase y no con la hora de la maquina
+//   const firestore = firebase.firestore();
+//   const settings = {timestampsInSnapshots: true};
+//   firestore.settings(settings);
+//   const db = firebase.firestore();//con esta funcion hace que se cree una coleccion en firestore
+//   db.collection("users").add({
+//     })
+//     .then(function (docRef) {
+//       console.log("Document written with ID: ", docRef.id);
+//     })
+//     .catch(function (error) {
+//       console.error("Error adding document: ", error);
+//     });
+// }
+
+
 window.register = () => {
   const nameRegister = nameR.value;
   const emailRegister = emailR.value;
@@ -66,6 +85,7 @@ window.register = () => {
   }
   almacenar();
 }
+
 loginFacebook = () => {
   const provider = new firebase.auth.FacebookAuthProvider();
   //provider.addScope("user_birthday");tiene que pedirle permiso a Facebook

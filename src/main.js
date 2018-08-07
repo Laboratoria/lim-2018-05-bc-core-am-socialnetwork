@@ -6,6 +6,7 @@ window.onload = () => {
       window.location.assign('home.html');
       loginUser.style.display = "none";
       registerUser.style.display ="none";
+      
     } else {
       //si no estamos logeados
       loginUser.style.display = "block";
