@@ -5,12 +5,13 @@ window.login = () => {
   if (emailValue && passwordValue !== "") {
     const filtro = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (!filtro.test(emailValue)) {
-      alert("Por favor digite un e-mail valido")
+      alert("Por favor, digite un e-mail valido")
     } else {
       firebase.auth().signInWithEmailAndPassword(emailValue, passwordValue)
         .then(() => {
           console.log("Usuario con login exitoso")
-        })
+				})
+				// VALIDACIÓN!!!!!!!!!!!!! !!!!!!!!!!!!!!!
         .catch((error) => {
           console.log("error de firebase >" + error.code);
           console.log("error de firebase ,mensaje >" + error.message);
