@@ -4,5 +4,14 @@
 	// var instances = M.Sidenav.init(elems, options);
 });
  */
-const elNombre = localStorage.getItem('ID');
-console.log(elNombre);
+const idUserInLine = localStorage.getItem('ID');
+const emailUserInLine = localStorage.getItem('email')
+console.log(idUserInLine);
+console.log(emailUserInLine);
+
+let userNow = {
+	id: idUserInLine,
+	email: emailUserInLine
+}
+console.log(userNow);
+
