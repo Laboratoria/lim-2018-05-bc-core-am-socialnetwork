@@ -5,7 +5,7 @@
 });
  */
 const idUserInLine = localStorage.getItem('ID');
-const emailUserInLine = localStorage.getItem('email')
+const emailUserInLine = localStorage.getItem('emaill')
 console.log(idUserInLine);
 console.log(emailUserInLine);
 

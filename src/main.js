@@ -8,7 +8,7 @@ window.onload = () => {
       loginUser.style.display = "none";
       registerUser.style.display ="none";
       console.log("User >"+ JSON.stringify(user));
-      // location.assign('home.html');
+      location.assign('home.html');
     }
     else {
       //si no estamos logeados
