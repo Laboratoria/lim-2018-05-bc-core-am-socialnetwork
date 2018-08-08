@@ -65,10 +65,10 @@
     <form class="col s10" action="home.html" id="formPrivacity">Cuéntale al mundo cuanto,cuando y como [....]
       <div class="row">
         <div class="input-field col s12">
-          <textarea id="textarea2" class="materialize-textarea" data-length="700"></textarea>
+          <textarea id="boxPost" class="materialize-textarea" data-length="700"></textarea>
           <label for="textarea2">Comparte tu experiencia</label>
         </div>
-          <button class="btn right" id="publicarPost" onclick=""> Publicar</button>
+          <button class="btn right" id="publicarPost" onclick="pintar()"> Publicar</button>
           <div class="col 3">
             <select name="jnjn" disable="disable" id="privacity">
               <option value="ds" class="value">Privacidad</option>
@@ -100,25 +100,13 @@
 </section>
    <!--Aquí termina visualiza el input de postear - todos los elementos requeridos para el muro -->
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-  <script>
-    // Iniciando Firebase
-    const config = {
-      apiKey: "AIzaSyDK2Ta8nwPM7UWDdUHYrVVx5Vof0k0vuFY",
-      authDomain: "redsocial-urpi.firebaseapp.com",
-      databaseURL: "https://redsocial-urpi.firebaseio.com",
-      projectId: "redsocial-urpi",
-      storageBucket: "redsocial-urpi.appspot.com",
-      messagingSenderId: "430758923648"
-    };
-    firebase.initializeApp(config);
-
-  </script>
+ 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
- $(document).ready(function(){
+ $(document).ready(()=>{
     $('.sidenav').sidenav();
   });
-  $(document).ready(function() {
+  $(document).ready(()=> {
     $('input#input_text, textarea#textarea2').characterCounter();
   });
   </script>
@@ -127,6 +115,19 @@
 
   <!-- Compilando JavaScript con Materialize-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script>
+      // Iniciando Firebase
+      const config = {
+        apiKey: "AIzaSyDK2Ta8nwPM7UWDdUHYrVVx5Vof0k0vuFY",
+        authDomain: "redsocial-urpi.firebaseapp.com",
+        databaseURL: "https://redsocial-urpi.firebaseio.com",
+        projectId: "redsocial-urpi",
+        storageBucket: "redsocial-urpi.appspot.com",
+        messagingSenderId: "430758923648"
+      };
+      firebase.initializeApp(config);
+  
+    </script>
 </body>
 
 </html>

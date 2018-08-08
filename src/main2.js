@@ -4,3 +4,5 @@
 	// var instances = M.Sidenav.init(elems, options);
 });
  */
+const elNombre = localStorage.getItem('ID');
+console.log(elNombre);
