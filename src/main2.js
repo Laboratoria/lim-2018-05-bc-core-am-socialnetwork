@@ -4,6 +4,33 @@
 	var instances = M.Sidenav.init(elems, options);
 });
  */
+const idUserInLine = localStorage.getItem('ID');
+const emailUserInLine = localStorage.getItem('emaill')
+console.log(idUserInLine);
+console.log(emailUserInLine);
+
+let userNow = {
+	id: idUserInLine,
+	email: emailUserInLine
+}
+console.log(userNow);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Ejemplo de likes, se borrará , solo es prueba 
 const clicks1 = 0;
