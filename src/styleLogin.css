@@ -1,0 +1,27 @@
+body{
+  font-family: 'Modern Antiqua', cursive;
+  font-family: 'Eczar', serif;
+  color: rgb(255, 255, 255);
+}
+#emailLogin{
+  background-color: rgba(245, 241, 241, 0.719);
+  border:  0.05em solid #A8A8A8;
+  border-radius: 1em;
+}
+#passwordLogin{
+  background-color: rgba(245, 241, 241, 0.719);
+  border: 0.05em solid #A8A8A8;
+  border-radius: 1em;
+}
+.btn{
+  border-radius: 1em;
+}
+.btn-flat-small grey{
+  border-radius: 2em;
+}
+.registerB{
+  background-color: rgba(245, 241, 241, 0.801);
+  border: 0.05em solid #A8A8A8;
+  border-radius: 1em;
+  padding: 1em;
+}
