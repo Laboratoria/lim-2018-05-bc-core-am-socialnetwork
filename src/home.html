@@ -15,8 +15,8 @@
 <!--SE TRABAJARÁ CON 2 HTML LOGIN Y REGISTER SIN BOTÓN "CERRAR SESIÓN" -->
 <body>
   <!--Navbar para la parte superior :Logo en vista diferente ,perfil y cerrar sesión-->
-<nav class="green">
-  <div class="nav-wrapper">
+<nav class=" green pushpin">
+  <div class="nav-wrapper ">
     <a class="brand-logo center" title="logoDiferente" href="home.html">
       <img src="../images/vistaLogo.png" alt="vistaDiferenteLogo" />
     </a>
@@ -25,16 +25,16 @@
     </a>
     <ul class="right hide-on-med-and-down">
       <li>
+        <a href="home.html">Explorar</a>
+      </li>
+      <li>
         <a href="home.html">Mi perfil</a>
       </li>
       <li>
         <a href="home.html">Configuración</a>
       </li>
       <li>
-        <a href="home.html">Javascript</a>
-      </li>
-      <li>
-        <a href="home.html">Explorar</a>
+        <a href="home.html">-</a>
       </li>
       <button id="logOutButton" class="btn waves-effect col s " onclick="logout()"> Cerrar Sesión</button>
     </ul>
@@ -50,53 +50,173 @@
     <a href="home.html">Configuración</a>
   </li>
   <li>
-    <a href="home.html">Javascript</a>
-  </li>
-  <li>
     <a href="home.html">Explorar</a>
   </li>
   <button id="logOutButton" class="btn waves-effect col s " onclick="logout()"> Cerrar Sesión</button>
 </ul>
 <!--Aquí finaliza nav para móvil-->
 </nav>
-       <!--Aquí se visualiza el input de postear - todos los elementos requeridos para el muro -->
+<!--Aquí se visualiza el input de postear - todos los elementos requeridos para el muro -->
 <section class="section container">
-  <div class="row center align">
-    <form class="col s10" action="home.html" id="formPrivacity">Cuéntale al mundo cuanto,cuando y como [....]
-      <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea2" class="materialize-textarea" data-length="700"></textarea>
-          <label for="textarea2">Comparte tu experiencia</label>
-        </div>
-          <button class="btn right" id="publicarPost" onclick=""> Publicar</button>
-          <div class="col 3">
-            <select name="jnjn" disable="disable" id="privacity">
-              <option value="ds" class="value">Privacidad</option>
-              <option value="sds" class="value">Todos</option>
-              <option value="sds" class="value">Solo yo</option>
-            </select>
-          <!--Aquí colocaré espacio para post y los que faltan,NO borrar!-->
-<div class="container">
-  <div class="row">
-
-    <div class="col-md-6" id="cardSection"></div>
-  </div>
-</div> 
-<div class="row">
-  <div class="col s12 m12">
-    <div class="z-depth-5" id="postPublished">
-      <p>Possssssssssssst</p>
-      <p>Aquí irá cada post publicado</p>
-     <h4>-----</h4>
-     <h4>------</h4>
-     <h4>.....</h4>
+<div class="row section container">
+  <form class="col s10" action="home.html" id="formPrivacity">Cuéntale al mundo cuanto,cuando y como [....]
+    <div class="input-field col s12">
+      <textarea id="textarea2" class="materialize-textarea" data-length="700"></textarea>
+      <label for="textarea2">Comparte tu experiencia</label>
+      <button class="btn right" id="publicarPost" onclick=""> Publicar</button>
+      <div class="col 3">
+        <select  disable="disable" id="privacity">
+          <option value="ds" class="value">Privacidad</option>
+          <option value="sds" class="value">Todos</option>
+          <option value="sds" class="value">Solo yo</option>
+        </select>
+      </div>
     </div>
-    <button type="submit" id="buttonAdd" class="btn orange">Ajustes</button>
-    <button style="display: none" id="buttonUpdate" class="btn btn-success">Update task</button>
-    <button style="display: none" id="buttonCancel" class="btn btn-danger">Cancel</button>
+</div>
+<!--Aquí finaliza el input de postear  !-->
+<!--Aquí se encuentra el espacio para los post publicados,editar el post  !-->
+<div class="row">
+    <div class="z-depth-3 input-field col s10">
+        <p>Possssssssssssst</p>
+        <p>Aquí irá cada post publicado</p>
+        <h4 id="postPublished"></h4>
+        <h4>.....</h4>
+    </div>
+    <br>
+  <button type="submit" id="buttonAdd" class="btn orange">Editar</button>
+  <button style="display: none" id="buttonUpdate" class="btn btn-success">Update task</button>
+  <button style="display: none" id="buttonCancel" class="btn btn-danger">Cancel</button>
+  <!-- Modal Trigger -->
+  <a class="waves-effect  btn modal-trigger" href="#modal1">Eliminar</a>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+      <div class="modal-content">
+      <h5>¿Estás seguro que deseas eliminar esta publicación?</h5>
+      <p></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">¡No!</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Si,deseo eliminarlo.</a>
+    </div>
   </div>
-     
-          <!-- Aquí termina espacio para post-->
+</div>
+<!--Aquí finaliza el input de postear  !-->
+<!--Aquí se encuentra el espacio para los post publicados,editar el post  !-->
+<div class="row">
+    <div class="z-depth-3 input-field col s10">
+        <p>Possssssssssssst</p>
+        <p>Aquí irá cada post publicado</p>
+        <h4 id="postPublished"></h4>
+        <h4>.....</h4>
+    </div>
+    <br>
+  <button type="submit" id="buttonAdd" class="btn orange">Editar</button>
+  <button style="display: none" id="buttonUpdate" class="btn btn-success">Update task</button>
+  <button style="display: none" id="buttonCancel" class="btn btn-danger">Cancel</button>
+  <!-- Modal Trigger -->
+  <a class="waves-effect  btn modal-trigger" href="#modal1">Eliminar</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5>¿Estás seguro que deseas eliminar esta publicación?</h5>
+      <p></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">¡No!</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Si,deseo eliminarlo.</a>
+    </div>
+  </div>
+</div>
+<!--Aquí finaliza el input de postear  !-->
+<!--Aquí se encuentra el espacio para los post publicados,editar el post  !-->
+<div class="row">
+    <div class="z-depth-3 input-field col s10">
+        <p>Possssssssssssst</p>
+        <p>Aquí irá cada post publicado</p>
+        <h4 id="postPublished"></h4>
+        <h4>.....</h4>
+    </div>
+    <br>
+  <button type="submit" id="buttonAdd" class="btn orange">Editar</button>
+  <button style="display: none" id="buttonUpdate" class="btn btn-success">Update task</button>
+  <button style="display: none" id="buttonCancel" class="btn btn-danger">Cancel</button>
+  <!-- Modal Trigger -->
+  <a class="waves-effect  btn modal-trigger" href="#modal1">Eliminar</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5>¿Estás seguro que deseas eliminar esta publicación?</h5>
+      <p></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">¡No!</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Si,deseo eliminarlo.</a>
+    </div>
+  </div>
+</div>
+<!--Aquí finaliza el input de postear  !-->
+<!--Aquí se encuentra el espacio para los post publicados,editar el post  !-->
+<div class="row">
+    <div class="z-depth-3 input-field col s10">
+        <p>Possssssssssssst</p>
+        <p>Aquí irá cada post publicado</p>
+        <h4 id="postPublished"></h4>
+        <h4>.....</h4>
+    </div>
+    <br>
+  <button type="submit" id="buttonAdd" class="btn orange">Editar</button>
+  <button style="display: none" id="buttonUpdate" class="btn btn-success">Update task</button>
+  <button style="display: none" id="buttonCancel" class="btn btn-danger">Cancel</button>
+  <!-- Modal Trigger -->
+  <a class="waves-effect  btn modal-trigger" href="#modal1">Eliminar</a>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5>¿Estás seguro que deseas eliminar esta publicación?</h5>
+      <p></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">¡No!</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Si,deseo eliminarlo.</a>
+    </div>
+  </div>
+  <!-- Ejemplo de likes, se borrará ,solo es prueba-->
+  <button type="button" onclick="clicks()">Click me</button>
+  <p>Clicks: <a id="clicks">0</a></p>
+   <!-- Ejemplo de likes, se borrará ,solo es prueba-->
+</div>
+<!--Aquí finaliza el input de postear  !-->
+<!--Aquí se encuentra el espacio para los post publicados,editar el post  !-->
+<div class="row">
+    <div class="z-depth-3 input-field col s10">
+        <p>Possssssssssssst</p>
+        <p>Aquí irá cada post publicado</p>
+        <h4 id="postPublished"></h4>
+        <h4>.....</h4>
+    </div>
+    <br>
+  <button type="submit" id="buttonAdd" class="btn orange">Editar</button>
+  <button style="display: none" id="buttonUpdate" class="btn btn-success">Update task</button>
+  <button style="display: none" id="buttonCancel" class="btn btn-danger">Cancel</button>
+  <!-- Modal Trigger -->
+  <a class="waves-effect  btn modal-trigger" href="#modal1">Eliminar</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h5>¿Estás seguro que deseas eliminar esta publicación?</h5>
+      <p></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">¡No!</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Si,deseo eliminarlo.</a>
+    </div>
+  </div>
+</div>
+<!--Aquí finaliza el input de postear  !-->
+
 </section>
    <!--Aquí termina visualiza el input de postear - todos los elementos requeridos para el muro -->
   <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
@@ -118,9 +238,12 @@
  $(document).ready(function(){
     $('.sidenav').sidenav();
   });
-  $(document).ready(function() {
-    $('input#input_text, textarea#textarea2').characterCounter();
-  });
+$(document).ready(function(){
+  $('.modal').modal();
+});
+$(document).ready(function(){
+    $('.pushpin').pushpin();
+});
   </script>
   <script src="main2.js"></script>
   <script src="data2.js"></script>
